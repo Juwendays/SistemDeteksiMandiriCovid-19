@@ -27,7 +27,7 @@
 @endif
 
 
-    <img src="{{ asset('assets/img/jateng1.png')}}" alt="" style="width:400px;height:400px">
+    <img src="{{ asset('assets/starter/images/jateng1.png')}}" alt="" style="width:400px;height:400px">
                               <h1>SELAMAT DATANG ADMIN</h1>
 
 

@@ -68,7 +68,7 @@
 
 
                                 <div class="form-row button-login">
-                                    <button class="btn btn-login">Create <span
+                                    <button class="btn btn-login">Buat Akun <span
                                             class="fas fa-arrow-right"></span></button>
                                 </div>
                             </div>
