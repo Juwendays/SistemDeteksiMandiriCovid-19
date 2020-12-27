@@ -31,15 +31,15 @@
         </thead>
         <tbody>
         @foreach ($hasils as $hasil)
-<tr>
-<td>{{ $loop->iteration }}</td>
-<td>{{ $loop->iteration }}</td>
-<td>{{ $hasil->nik }}</td>
-<td>{{ $hasil->persentase }}</td>
-<td>{{ $hasil->keterangan }}</td>
-<td>{{ $hasil->hasil }}</td>
-</tr>
-@endforeach
+            <tr>
+                <td>{{ $loop->iteration }}</td>
+                <td>{{ $loop->iteration }}</td>
+                <td>{{ $hasil->nik }}</td>
+                <td>{{ $hasil->persentase }}</td>
+                <td>{{ $hasil->keterangan }}</td>
+                <td>{{ $hasil->hasil }}</td>
+            </tr>
+        @endforeach
       </table>
     </div>
   </div>

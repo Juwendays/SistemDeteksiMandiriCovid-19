@@ -12,7 +12,7 @@
   <!-- Template CSS -->
   <link rel="stylesheet" href="{{ asset('assets/starter/css/style-starter.css') }}">
 
-  <!-- <link href="{{ asset('assets/starter/images/jateng1.png')}}" style="width:50px;height:50px" rel="shortcut icon"> -->
+  <link href="{{ asset('assets/starter/images/jateng1.png')}}" style="width:50px;height:50px" rel="shortcut icon">
 
 </head>
 

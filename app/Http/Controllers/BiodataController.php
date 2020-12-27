@@ -117,8 +117,7 @@ class BiodataController extends Controller
                 // $email = $request->input('email');
                 // $alamat = $request->input('alamat');
                 // $no = $request->input('no');
-                
-                
+
 
           //  ]);
 
