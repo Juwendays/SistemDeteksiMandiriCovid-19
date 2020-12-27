@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Biodata;
 use App\Models\Test;
+use Validator;
 
 class AdminController extends Controller
 {
@@ -81,6 +82,53 @@ class AdminController extends Controller
             'aktif' => 'Y'
         ]);
 
-        return redirect('/admin/tablesoal')->with('status', 'Indikator Soal Berhasil ditambahkan');
+        return redirect('/rekapsoaltest')->with('status', 'Indikator Soal Berhasil ditambahkan');
+    }
+
+    public function edit(Test $test)
+    {
+        return view('Admin.updatesoal', compact('test'));
+    }
+
+    public function update(Request $request, Test $test)
+    {
+        // return $request;
+        $rules = [
+            'indikator' => 'required',
+            'opsia'      => 'required',
+            'opsib'      => 'required',
+            'jawaban' => 'required',
+
+      ];
+
+      $messages = [
+          'indikator.required'          => 'Indikator masih kosong',
+          'opsia.required'           => 'Nomor Induk Kependudukan wajib diisi.',
+          'opsib.required'         => 'Email wajib diisi.',
+          'jawaban.required'        => 'Pilihan jawaban yang benar masih kosong',
+      ];
+
+      $validator = Validator::make($request->all(), $rules, $messages);
+       
+      if($validator->fails()){
+          return redirect()->back()->withErrors($validator)->withInput($request->all());
+      }
+
+           Test::where('id', $test->id)
+           ->update([
+               'indikator' => $request->indikator,
+               'ya'      => $request->opsia,
+               'tidak'      => $request->opsib,
+               'knc_jawaban' => $request->jawaban
+           ]);
+           
+            return redirect('/rekapsoaltest')->with('status','Data Indikator berhasil di update');
+        }
+
+    public function destroy(Test $test)
+    {
+        // return $test;
+        Test::destroy($test->id);
+        return redirect('/rekapsoaltest')->with('status', 'Data Indikator berhasil di hapus');
     }
 }

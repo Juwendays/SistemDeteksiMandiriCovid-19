@@ -38,7 +38,7 @@ Route::get('/rekapsoaltest','AdminController@rekapsoal')->name('rekapsoal');
 Route::get('/tambahsoal','AdminController@tambahsoal')->name('tambahsoal');
 
 //CRUD ADMIN
-Route::post('/test', 'AdminController@store')->name('test');
+// Route::post('/test', 'AdminController@store')->name('test');
 Route::delete('/test/{test}', 'AdminController@destroy')->name('deletesoal');
 Route::get('/test/{test}/edit', 'AdminController@edit')->name('editsoal');
 Route::patch('/test/{test}', 'AdminController@update')->name('updatesoal');
