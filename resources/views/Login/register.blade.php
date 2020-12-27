@@ -24,7 +24,7 @@
                 </div>
             @endif
 
-                    <form action="/registerPost" method="post" class="register-form">
+                    <form action="{{ route('registerpost') }}" method="post" class="register-form">
                         @csrf
                         <fieldset>
                             <div class="form">

@@ -285,14 +285,6 @@
                   <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                   Profile
                 </a>
-                <!-- <a class="dropdown-item" href="#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Settings
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Activity Log
-                </a> -->
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="{{ url('/admin') }}" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -341,7 +333,7 @@
         <div class="modal-body">Apakah anda ingin melakukan Logout akun?</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="{{ url('/admin')}}">Logout</a>
+          <a class="btn btn-primary" href="{{ route('login') }}">Logout</a>
         </div>
       </div>
     </div>

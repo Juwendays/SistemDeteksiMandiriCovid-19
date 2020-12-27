@@ -23,12 +23,12 @@ Route::post('/biodata/store','BiodataController@store')->name('storebiodata');
 
 //Halaman Login
 Route::get('/login','LoginController@login')->name('login');
-Route::post('/loginPost', 'UserController@loginPost');
-Route::get('/logout', 'UserController@logout');
+Route::post('/loginPost', 'LoginController@loginPost')->name('loginpost');
+Route::get('/logout', 'LoginController@logout')->name('logout');
 
 //Halaman Register
 Route::get('/register','LoginController@register')->name('register');
-Route::post('/registerPost', 'UserController@registerPost');
+Route::post('/registerPost', 'LoginController@registerPost')->name('registerpost');
 
 // Halaman Admin
 Route::get('/dashboard','AdminController@dashboard')->name('dashboard');
@@ -36,6 +36,13 @@ Route::get('/rekapbiodata','AdminController@rekapbiodata')->name('rekapbiodata')
 Route::get('/rekaphasiltest','AdminController@rekaphasil')->name('rekaphasil');
 Route::get('/rekapsoaltest','AdminController@rekapsoal')->name('rekapsoal');
 Route::get('/tambahsoal','AdminController@tambahsoal')->name('tambahsoal');
+
+//CRUD ADMIN
+Route::post('/test', 'AdminController@store')->name('test');
+Route::delete('/test/{test}', 'AdminController@destroy')->name('deletesoal');
+Route::get('/test/{test}/edit', 'AdminController@edit')->name('editsoal');
+Route::patch('/test/{test}', 'AdminController@update')->name('updatesoal');
+Route::post('/test/create', 'AdminController@create')->name('buatsoal');
 
 //Halaman Unduh
 Route::get('/unduh','UnduhController@unduh')->name('unduh');

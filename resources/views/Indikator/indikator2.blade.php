@@ -29,7 +29,7 @@
 <nav class="navbar navbar-default navbar-static-top">
     <div class="container" id="navbar">
       <div class="navbar-header">
-        <a href="{{ url('/') }}" class="navbar-brand navbar-link"><img src="{{ asset('/assets/img/logo-new.png') }}"></a>
+        <a href="{{ url('/') }}" class="navbar-brand navbar-link"><img src="{{ asset('/assets/starter/images/logo-new.png') }}"></a>
         </div>
         </div>
         </nav>

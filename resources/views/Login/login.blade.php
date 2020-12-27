@@ -27,7 +27,7 @@
                                     </div>
                                     @endif
 
-                    <form action="/loginPost" method="post" class="login-form">
+                    <form action="{{ route('loginpost')}}" method="post" class="login-form">
                     @csrf
                         <fieldset>
                             <div class="form">

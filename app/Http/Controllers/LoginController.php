@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+use Session;
 
 class LoginController extends Controller
 {
@@ -27,14 +30,14 @@ class LoginController extends Controller
                 Session::put('name',$data->name);
                 Session::put('emailadmin',$data->emailadmin);
                 Session::put('admin',TRUE);
-                return redirect('/admin/table');
+                return redirect('/dashboard');
             }
             else{
-                return redirect('Login.login')->with('alert','Password atau Email, Salah !');
+                return redirect('/login')->with('alert','Password atau Email, Salah !');
             }
         }
         else{
-            return redirect('Login.login')->with('alert','Password atau Email, Salah!');
+            return redirect('/login')->with('alert','Password atau Email, Salah!');
         }
     }
 
