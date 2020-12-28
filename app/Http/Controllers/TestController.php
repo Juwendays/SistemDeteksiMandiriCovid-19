@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Session;
 use App\Models\Test;
-// use App\Models\Hasil;
+use App\Models\Hasil;
 
 use Validator;
 
@@ -99,12 +99,12 @@ class TestController extends Controller
             // $data->persentase = $hasil;
             // $data->keterangan = $keterangan;
         
-            // Hasil::insert([
-            //          'nik'  => '1',
-            //          'persentase'=> $hasil,
-            //          'keterangan'=> $keterangan,
-            //          'hasil'    => $rawat
-            //          ]);
+            Hasil::insert([
+                     'nik'  => '1',
+                     'persentase'=> $hasil,
+                     'keterangan'=> $keterangan,
+                     'hasil'    => $rawat
+                     ]);
 
 
             // Untuk Pengiriman Session

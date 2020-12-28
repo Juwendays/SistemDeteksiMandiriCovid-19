@@ -32,7 +32,7 @@
                 <div class="card mt-3">
                     <div class="card-body">
 
-      <form class="" action="{{ route('storebiodata') }}" method="POST" enctype="multipart/form-data">
+      <form class="" action="{{ route('storebiodata')}}" method="POST" enctype="multipart/form-data">
         @csrf
         <table border="0" cellpadding="5">
         
