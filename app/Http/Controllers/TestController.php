@@ -100,7 +100,6 @@ class TestController extends Controller
             // $data->keterangan = $keterangan;
         
             Hasil::insert([
-                     'nik'  => '1',
                      'persentase'=> $hasil,
                      'keterangan'=> $keterangan,
                      'hasil'    => $rawat

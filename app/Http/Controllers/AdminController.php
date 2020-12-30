@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Biodata;
 use App\Models\Test;
+use App\Models\Hasil;
 use Validator;
 
 class AdminController extends Controller
@@ -23,7 +24,9 @@ class AdminController extends Controller
 
     public function rekaphasil()
     {
-        return view('Admin.rekaphasiltest');
+        $hasils = Hasil::all();
+
+        return view('Admin.rekaphasiltest',['hasils'=>$hasils]);
     }
 
     public function rekapsoal()
