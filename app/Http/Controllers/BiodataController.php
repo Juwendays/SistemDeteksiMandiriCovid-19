@@ -51,30 +51,13 @@ class BiodataController extends Controller
        
       if($validator->fails()){
           return redirect()->back()->withErrors($validator)->withInput($request->all());
-      }
-        // validasi form jika ada yang kosong 
-        // $request->validate([
-        //     'nama' => 'required',
-        //     'nik'  => 'required|numeric',
-        //     'email' => 'required|email|unique:biodatas',
-        //     'alamat' => 'required',
-        //     'no' => 'required|numeric',
-        //     'kota' => 'required',
-        //     'foto' => 'required',
-        //     'fotoktp' => 'required'
-        // ]);
-
-
-        // menyabungkan DB dengan Eloquent
-        // $biodatas = Biodatas::all();
-
+  
+        // Membuat Storage Penyimpanan Untuk Upload
         $foto = $request->file('foto')->store('foto','public');
         $fotoktp = $request->file('fotoktp')->store('fotoktp','public');
 
-        // $biodatas = Biodata::all();
 
-        // Biodata::create($request->all());
-
+        //Menyimpan inputan ke dalam database
         $data = new Biodata();
         $data->nik = $request->nik;
         $data->nama = $request->nama;
@@ -95,35 +78,9 @@ class BiodataController extends Controller
         Session::put('kota',$data->kota);
         Session::put('foto',$data->foto);
         Session::put('fotoktp',$data->fotoktp);
-        
-
-      //   Biodata::insert([
-	    // // insert data ke table biodatas
-	    //   // DB::table('biodatas')->insert([
-      //        'nik'=> $request->nik,
-      //        'nama'=> $request->nama,
-      //        'email'=> $request->email,
-      //        'alamat'=> $request->alamat,
-      //        'no'=> $request->no,
-      //        'kota'=> $request->kota,
-      //        'foto'=> $foto,
-      //        'fotoktp'=> $fotoktp
-      //        ]);
-
-             
-
-                // $nik = $request->input('nik');
-                // $nama = $request->input('nama');
-                // $email = $request->input('email');
-                // $alamat = $request->input('alamat');
-                // $no = $request->input('no');
-
-
-          //  ]);
-
-          // dd($foto);
 
 	// alihkan halaman ke halaman TEST FUNGSI SAMA DENGAN HEADER
 	return redirect('/indikator');
     }
+}
 }
