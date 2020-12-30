@@ -15,7 +15,7 @@ class CreateHasilTable extends Migration
     {
         Schema::create('hasils', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('nik');
+            // $table->bigInteger('nik');
             $table->string('persentase');
             $table->string('keterangan');
             $table->string('hasil');

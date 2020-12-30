@@ -11,8 +11,8 @@ class Biodata extends Model
 
     protected $fillable = ['nik','nama','email','alamat','no','kota','foto','fotoktp'];
 
-    public function biodatas()
+    public function hasil()
     {
-    	return $this->hasMany('App\Models\Hasil');
+    	return $this->hasOne(Hasil::class);
     }
 }

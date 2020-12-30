@@ -9,8 +9,8 @@ class Hasil extends Model
 {
     use HasFactory;
 
-    public function hasils()
+    public function biodatas()
     {
-    	return $this->belongsTo('App\Models\Biodata');
+    	return $this->hasMany(Biodata::class);
     }
 }
