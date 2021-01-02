@@ -69,6 +69,20 @@
 
         <tr>
           <td>
+            <label for="lahir">Tanggal Lahir</label>
+          </td>
+          <td>
+            <input type="date" class="form-control @error('lahir') is-invalid @enderror" name="lahir" id="lahir" placeholder="Masukan Tanggal Lahir" value="{{ old('lahir') }}">
+
+            @error('lahir')
+            <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+
+          </td>
+        </tr>
+
+        <tr>
+          <td>
             <label for="email">E-mail</label>
           </td>
           <td>

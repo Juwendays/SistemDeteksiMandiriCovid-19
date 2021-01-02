@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Session;
 
+
 class LoginController extends Controller
 {
     public function login()
@@ -63,5 +64,4 @@ class LoginController extends Controller
 
         return redirect('/dashboard')->with('alert-success','Kamu berhasil Register');
     }
-
 }

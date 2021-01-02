@@ -1,0 +1,1 @@
+<link href="{{ asset('assets/starter/images/jateng1.png') }}" rel="icon" type="image/png">

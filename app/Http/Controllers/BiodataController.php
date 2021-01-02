@@ -19,6 +19,7 @@ class BiodataController extends Controller
         $rules = [
             'nama' => 'required',
             'nik'  => 'required|min:16|max:16|unique:biodatas',
+            'lahir' => 'required',
             'email' => 'required|email|unique:biodatas',
             'alamat' => 'required',
             'no' => 'required|min:10|max:12',
@@ -33,6 +34,7 @@ class BiodataController extends Controller
           'nik.unique'             => 'Nomor Induk Kependudukan sudah terdaftar.',
           'nik.min'                => 'Nomor Induk Kependudukan minimal diisi dengan 16 karakter.',
           'nik.max'                => 'Nomor Induk Kependudukan maksimal diisi dengan 16 karakter.',
+          'lahir.required'         => 'Tanggal Lahir wajib diisi.',
           'email.required'         => 'Email wajib diisi.',
           'email.email'            => 'Email tidak valid.',
           'email.unique'           => 'Email sudah pernah terdaftar.',
@@ -51,16 +53,17 @@ class BiodataController extends Controller
        
       if($validator->fails()){
           return redirect()->back()->withErrors($validator)->withInput($request->all());
-  
+        }
+
         // Membuat Storage Penyimpanan Untuk Upload
         $foto = $request->file('foto')->store('foto','public');
         $fotoktp = $request->file('fotoktp')->store('fotoktp','public');
-
 
         //Menyimpan inputan ke dalam database
         $data = new Biodata();
         $data->nik = $request->nik;
         $data->nama = $request->nama;
+        $data->lahir = $request->lahir;
         $data->email = $request->email;
         $data->alamat = $request->alamat;
         $data->no = $request->no;
@@ -72,6 +75,7 @@ class BiodataController extends Controller
         // Menyimpan session
         Session::put('nama',$data->nama);
         Session::put('nik',$data->nik);
+        Session::put('lahir',$data->lahir);
         Session::put('alamat',$data->alamat);
         Session::put('email',$data->email);
         Session::put('no',$data->no);
@@ -82,5 +86,4 @@ class BiodataController extends Controller
 	// alihkan halaman ke halaman TEST FUNGSI SAMA DENGAN HEADER
 	return redirect('/indikator');
     }
-}
 }
