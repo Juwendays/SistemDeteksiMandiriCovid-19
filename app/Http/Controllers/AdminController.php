@@ -55,18 +55,6 @@ class AdminController extends Controller
     {
         return view('Admin.tambahsoal');
     }
-
-    // public function store(Request $request)
-    // {
-    // Test::create([
-    //     'indikator' => $request->indikator,
-    //     'opsia' => $request->ya,
-    //     'opsib' => $request->tidak,
-    //     'jawaban' => $request->knc_jawaban
-    // ]);
-
-    // return redirect('/rekapsoal')->with('status', 'Data Student Berhasil ditambahkan');
-    // }  
     
     public function create(Request $request)
     {
