@@ -11,4 +11,13 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
     protected $fillable = ['name','emailadmin','password'];
+
+    // public function getFullNameAttribute()
+    // {
+    //     if (is_null($this->emailadmin)) {
+    //         return "{$this->name}";
+    //     }
+
+    //     return "{$this->name} {$this->emailadmin}";
+    // }
 }
