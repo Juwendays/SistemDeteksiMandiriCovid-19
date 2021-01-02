@@ -62,6 +62,6 @@ class LoginController extends Controller
         $data->password = bcrypt($request->password);
         $data->save();
 
-        return redirect('/dashboard')->with('alert-success','Kamu berhasil Register');
+        return redirect('/dashboard')->with('status','Berhasil Register Akun Admin Baru');
     }
 }

@@ -17,7 +17,17 @@ class AdminController extends Controller
     
     public function dashboard()
     {
-        return view('Admin.dashboard');
+        $biodatas = Biodata::count();
+        $hasils = Hasil::count();
+        $tests = Test::count();
+
+        $widget = [
+            'biodatas' => $biodatas,
+            'hasils'    => $hasils,
+            'tests' => $tests,
+        ];
+
+        return view('Admin.dashboard',compact('widget'));
     }
 
     public function rekapbiodata()

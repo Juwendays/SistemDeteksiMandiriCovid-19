@@ -52,7 +52,7 @@
                                     <div class="ratings my-4 my-4">
                                         <span class="fa fa-star"></span>
                                     </div>
-                                    <p>Anda dapat mulai mengikuti test dengan mengklik tombol mulai halaman utama atau pada menu test</p>
+                                    <p>Mulai mengikuti test dengan mengklik tombol mulai halaman utama</p>
                                     <div class="customers-bottom_sur">
                                     </div>
                                 </div>
@@ -124,7 +124,7 @@
                                         <span class="fa fa-star"></span>
                                         <span class="fa fa-star"></span>
                                     </div>
-                                    <p>lihat hasil test untuk mengetuhai anda teridentifikasi terpapar atau tidak</p>
+                                    <p>Lihat hasil test untuk mengetuhai anda teridentifikasi terpapar atau tidak</p>
                                     <div class="customers-bottom_sur">
                                     </div>
                                 </div>
@@ -150,7 +150,7 @@
                                         <span class="fa fa-star"></span>
                                         <span class="fa fa-star"></span>
                                     </div>
-                                    <p>Hasil test dapat diunduh sebagai dokumen yang wajib dibawa saat melakukan cek kesehatan</p>
+                                    <p>Hasil test dapat diunduh sebagai dokumen kesehatan</p>
                                     <div class="customers-bottom_sur">
                                     </div>
                                 </div>

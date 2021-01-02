@@ -88,12 +88,12 @@
 			            </h2>
 			            <section>
 			                <div class="inner">
-			                	<h3>Jawab Indikator dibawah sesuai dengan kondisi Anda:</h3>
+			                	<h3>Indikator Sudah Anda Jawab</h3>
 			                	<div class="form-row table-responsive">
 									<table class="table">
 									<!-- <form class="form-register" action="{{ route('test') }}" method="post"> -->
                                     <!-- <form class="form-register" action="{{ route('test') }}" method="post"> -->
-                                    @csrf
+                                    <!-- @csrf
 										<tbody>
                                         @foreach ($tests as $t)
                                         <input type="hidden" name="id[]" value="{{ $t->id }}">
@@ -116,19 +116,19 @@
 								                </label>
 								        </div>
                                 
-                                    @endforeach
+                                    @endforeach -->
                                
                         <!-- <input type="submit" class="btn btn-primary" name="submit" value="Lihat Hasil Test" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?')"> -->
                         <!-- <a href="{{ url('/test/hasil') }}" class="btn btn-primary"> -->
-                        <td>
-                        <input type="submit" class="btn btn-primary" name="submit" value="Lihat Hasil Test" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?')">
+                        <!-- <td>
+                        <input type="submit" class="btn btn-primary" name="submit" value="Lihat Hasil Test" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?')"> -->
                             <!-- <i class="fas fa-trash"></i> -->
                             <!-- <i class="fa fa-file-pdf"></i> -->
                             <!-- <a href="{{ route('indikator') }}" class="btn btn-primary"> -->
-                            <i class="fas fa-trash"></i>
+                            <!-- <i class="fas fa-trash"></i>
                             
                             </a>
-                            </td>
+                            </td> -->
                             </table>
 							</form>
                                     </div>

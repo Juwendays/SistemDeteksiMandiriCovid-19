@@ -7,6 +7,12 @@
  <!-- Begin Page Content -->
  <div class="container-fluid">
 
+ @if (session('status'))
+        <div class="alert alert-success">
+           {{ session('status') }}
+        </div>
+          @endif 
+
 <!-- Page Heading -->
 <h1 class="h3 mb-2 text-gray-800">Sistem Informasi Test Mandiri Covid Diskominfo Jateng</h1>
 <!-- <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p> -->
@@ -18,7 +24,7 @@
                                 <div class="card-body-icon">
                                     <i class="fas fa-fw fa-comments"></i>
                                 </div>
-                                <div class="mr-5">7 User</div>
+                                <div class="mr-5">{{ $widget['biodatas'] }} User</div>
                             </div>
                             <a class="card-footer text-white clearfix small z-1" href="#">
                                 <span class="float-left">User yang menggunakan</span>
@@ -35,7 +41,7 @@
                                 <div class="card-body-icon">
                                     <i class="fas fa-fw fa-list"></i>
                                 </div>
-                                <div class="mr-5">11 New Tasks!</div>
+                                <div class="mr-5">{{ $widget['hasils'] }}Hasil yang Masuk</div>
                             </div>
                             <a class="card-footer text-white clearfix small z-1" href="#">
                                 <span class="float-left">View Details</span>
@@ -51,7 +57,7 @@
                                 <div class="card-body-icon">
                                     <i class="fas fa-fw fa-shopping-cart"></i>
                                 </div>
-                                <div class="mr-5">123 New Orders!</div>
+                                <div class="mr-5">{{ $widget['tests'] }}Indikator</div>
                             </div>
                             <a class="card-footer text-white clearfix small z-1" href="#">
                                 <span class="float-left">View Details</span>
