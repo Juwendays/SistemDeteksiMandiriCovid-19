@@ -24,9 +24,12 @@ Route::post('/biodata/store','BiodataController@store')->name('storebiodata');
 //Halaman Login
 Route::get('/login','LoginController@login')->name('login');
 Route::post('/loginPost', 'LoginController@loginPost')->name('loginpost');
-Route::get('/logout', 'LoginController@logout')->name('logout');
 
 
+
+Route::group(['middleware' => 'CekLoginMiddleware'], function(){
+
+    Route::get('/logout', 'LoginController@logout')->name('logout');
 
     //Halaman Register
     Route::get('/register','LoginController@register')->name('register');
@@ -39,12 +42,13 @@ Route::get('/logout', 'LoginController@logout')->name('logout');
     Route::get('/rekapsoaltest','AdminController@rekapsoal')->name('rekapsoal');
     Route::get('/tambahsoal','AdminController@tambahsoal')->name('tambahsoal');
 
-//CRUD ADMIN
-// Route::post('/test', 'AdminController@store')->name('test');
-Route::delete('/test/{test}', 'AdminController@destroy')->name('deletesoal');
-Route::get('/test/{test}/edit', 'AdminController@edit')->name('editsoal');
-Route::patch('/test/{test}', 'AdminController@update')->name('updatesoal');
-Route::post('/test/create', 'AdminController@create')->name('buatsoal');
+    //CRUD ADMIN
+    // Route::post('/test', 'AdminController@store')->name('test');
+    Route::delete('/test/{test}', 'AdminController@destroy')->name('deletesoal');
+    Route::get('/test/{test}/edit', 'AdminController@edit')->name('editsoal');
+    Route::patch('/test/{test}', 'AdminController@update')->name('updatesoal');
+    Route::post('/test/create', 'AdminController@create')->name('buatsoal');
+});
 
 //Halaman Unduh
 Route::get('/unduh','UnduhController@unduh')->name('unduh');

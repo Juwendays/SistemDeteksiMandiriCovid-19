@@ -31,6 +31,7 @@ class LoginController extends Controller
                 Session::put('name',$data->name);
                 Session::put('emailadmin',$data->emailadmin);
                 Session::put('admin',TRUE);
+                session(['berhasil_login'=> true]);
                 return redirect('/dashboard');
             }
             else{
@@ -42,10 +43,9 @@ class LoginController extends Controller
         }
     }
 
-    public function logout(){
-        Session::flush();
-        $request->session()->forget('password');
-        return redirect('login')->with('alert','Kamu sudah logout');
+    public function logout(Request $request){
+        $request->session()->flush();
+        return redirect('/login')->with('alert','Kamu sudah logout');
     }
 
     public function registerPost(Request $request){
