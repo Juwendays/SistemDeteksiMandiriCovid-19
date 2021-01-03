@@ -26,7 +26,7 @@
                                 </div>
                                 <div class="mr-5">{{ $widget['biodatas'] }} Data User</div>
                             </div>
-                            <a class="card-footer text-white clearfix small z-1" href="{{ route('rekapbiodata')}}">
+                            <a class="card-footer text-blue clearfix small z-1" href="{{ route('rekapbiodata')}}">
                                 <span class="float-left">User yang menggunakan</span>
                                 <span class="float-right">
                                     <i class="fas fa-angle-right"></i>
@@ -43,8 +43,8 @@
                                 </div>
                                 <div class="mr-5">{{ $widget['hasils'] }} Data Hasil Test</div>
                             </div>
-                            <a class="card-footer text-white clearfix small z-1" href="{{ route('rekaphasil')}}">
-                                <span class="float-left">View Details</span>
+                            <a class="card-footer text-yelow clearfix small z-1" href="{{ route('rekaphasil')}}">
+                                <span class="float-left">Hasil Test Yang Tersimpan</span>
                                 <span class="float-right">
                                     <i class="fas fa-angle-right"></i>
                                 </span>
@@ -59,8 +59,8 @@
                                 </div>
                                 <div class="mr-5">{{ $widget['tests'] }} Data Indikator</div>
                             </div>
-                            <a class="card-footer text-white clearfix small z-1" href="{{ route('rekapsoal')}}">
-                                <span class="float-left">View Details</span>
+                            <a class="card-footer text-green clearfix small z-1" href="{{ route('rekapsoal')}}">
+                                <span class="float-left">Jumlah Soal Indikator</span>
                                 <span class="float-right">
                                     <i class="fas fa-angle-right"></i>
                                 </span>

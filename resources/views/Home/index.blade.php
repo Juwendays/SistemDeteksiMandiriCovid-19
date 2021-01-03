@@ -15,7 +15,7 @@
                 <p>Sistem aplikasi uji risiko mandiri gejala Covid-19 sebagai upaya menekan penyebaran Covid-19 di Provinsi Jawa Tengah.</p>
                 <div class="mt-5">
                     <a class="btn btn-primary btn-style mr-2" href="{{ ('/biodata' ) }}">Mulai Test </a>
-                    <a class="btn btn-outline btn-outline-style" href="services.html">Informasi Tentang Kami</a>
+                    <a class="btn btn-outline btn-outline-style" href="{{ route('about') }}">Informasi Tentang Kami</a>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12 col-sm-12 order-first text-lg-left text-center">
