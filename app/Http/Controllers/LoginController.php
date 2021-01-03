@@ -45,7 +45,7 @@ class LoginController extends Controller
 
     public function logout(Request $request){
         $request->session()->flush();
-        return redirect('/login')->with('alert','Kamu sudah logout');
+        return redirect('/login')->with('alert','Anda sudah logout');
     }
 
     public function registerPost(Request $request){
