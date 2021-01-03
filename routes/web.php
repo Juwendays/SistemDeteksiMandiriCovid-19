@@ -26,16 +26,18 @@ Route::get('/login','LoginController@login')->name('login');
 Route::post('/loginPost', 'LoginController@loginPost')->name('loginpost');
 Route::get('/logout', 'LoginController@logout')->name('logout');
 
-//Halaman Register
-Route::get('/register','LoginController@register')->name('register');
-Route::post('/registerPost', 'LoginController@registerPost')->name('registerpost');
 
-// Halaman Admin
-Route::get('/dashboard','AdminController@dashboard')->name('dashboard');
-Route::get('/rekapbiodata','AdminController@rekapbiodata')->name('rekapbiodata');
-Route::get('/rekaphasiltest','AdminController@rekaphasil')->name('rekaphasil');
-Route::get('/rekapsoaltest','AdminController@rekapsoal')->name('rekapsoal');
-Route::get('/tambahsoal','AdminController@tambahsoal')->name('tambahsoal');
+
+    //Halaman Register
+    Route::get('/register','LoginController@register')->name('register');
+    Route::post('/registerPost', 'LoginController@registerPost')->name('registerpost');
+
+    // Halaman Admin
+    Route::get('/dashboard','AdminController@dashboard')->name('dashboard');
+    Route::get('/rekapbiodata','AdminController@rekapbiodata')->name('rekapbiodata');
+    Route::get('/rekaphasiltest','AdminController@rekaphasil')->name('rekaphasil');
+    Route::get('/rekapsoaltest','AdminController@rekapsoal')->name('rekapsoal');
+    Route::get('/tambahsoal','AdminController@tambahsoal')->name('tambahsoal');
 
 //CRUD ADMIN
 // Route::post('/test', 'AdminController@store')->name('test');

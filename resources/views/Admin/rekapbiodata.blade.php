@@ -26,6 +26,7 @@
             <th>Foto KTP</th>
             <th>NIK</th>
             <th>Nama</th>
+            <th>Tanggal Lahir</th>
             <th>Alamat</th>
             <th>Email</th>
             <th>No</th>
@@ -51,6 +52,7 @@
     <td><img src="{{ asset('storage/'.$bio['fotoktp']) }}" width="100" height="100"></td>
     <td>{{ $bio->nik }}</td>
     <td>{{ $bio->nama }}</td>
+    <td>{{ $bio->lahir }}</td>
     <td>{{ $bio->alamat }}</td>
     <td>{{ $bio->email }}</td>
     <td>{{ $bio->no }}</td>

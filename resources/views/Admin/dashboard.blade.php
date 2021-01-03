@@ -24,9 +24,9 @@
                                 <div class="card-body-icon">
                                     <i class="fas fa-fw fa-comments"></i>
                                 </div>
-                                <div class="mr-5">{{ $widget['biodatas'] }} User</div>
+                                <div class="mr-5">{{ $widget['biodatas'] }} Data User</div>
                             </div>
-                            <a class="card-footer text-white clearfix small z-1" href="#">
+                            <a class="card-footer text-white clearfix small z-1" href="{{ route('rekapbiodata')}}">
                                 <span class="float-left">User yang menggunakan</span>
                                 <span class="float-right">
                                     <i class="fas fa-angle-right"></i>
@@ -41,9 +41,9 @@
                                 <div class="card-body-icon">
                                     <i class="fas fa-fw fa-list"></i>
                                 </div>
-                                <div class="mr-5">{{ $widget['hasils'] }}Hasil yang Masuk</div>
+                                <div class="mr-5">{{ $widget['hasils'] }} Data Hasil Test</div>
                             </div>
-                            <a class="card-footer text-white clearfix small z-1" href="#">
+                            <a class="card-footer text-white clearfix small z-1" href="{{ route('rekaphasil')}}">
                                 <span class="float-left">View Details</span>
                                 <span class="float-right">
                                     <i class="fas fa-angle-right"></i>
@@ -57,9 +57,9 @@
                                 <div class="card-body-icon">
                                     <i class="fas fa-fw fa-shopping-cart"></i>
                                 </div>
-                                <div class="mr-5">{{ $widget['tests'] }}Indikator</div>
+                                <div class="mr-5">{{ $widget['tests'] }} Data Indikator</div>
                             </div>
-                            <a class="card-footer text-white clearfix small z-1" href="#">
+                            <a class="card-footer text-white clearfix small z-1" href="{{ route('rekapsoal')}}">
                                 <span class="float-left">View Details</span>
                                 <span class="float-right">
                                     <i class="fas fa-angle-right"></i>
