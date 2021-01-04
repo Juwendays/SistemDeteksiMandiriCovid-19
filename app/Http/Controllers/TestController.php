@@ -114,7 +114,7 @@ class TestController extends Controller
             $tests= Test::all();
         
             // return view('hasil');
-            return view('Indikator.indikator2',['tests' => $tests,'hasil' => $hasil ,'pilihan' => $pilihan,'keterangan'=> $keterangan]);
+            return view('Indikator.indikator2',['tests' => $tests,'hasil' => $hasil ,'pilihan' => $pilihan,'keterangan'=> $keterangan])->with('status', 'Jawaban Anda berhasil tersimpan');
         
             
     //  return redirect('/indikator2');

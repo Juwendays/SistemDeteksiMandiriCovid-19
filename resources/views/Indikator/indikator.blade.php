@@ -147,12 +147,12 @@
 			                	<h3>Rangkuman Test</h3>
 			                	<div class="form-row">
                                 <div class="row justify-content-md-center content-scroll"> 
-                          	<div class="col">
+                          	<!-- <div class="col">
                             <div class="box-dashed">
-                            <span>IDENTITAS</span> 
+                            <span>IDENTITAS</span>  -->
                             <!-- <table>
                                 <tr> -->
-                                    <br>
+                                    <!-- <br>
                                     <br>
                                     Nama    :   {{Session::get('nama')}}
                                     <br>
@@ -169,14 +169,14 @@
                                     No Hp   :   {{Session::get('no')}}
                                     <br>
                                     <br>
-                                    Kota    :   {{Session::get('kota')}}
+                                    Kota    :   {{Session::get('kota')}} -->
                                     
                                 <!-- </tr>
                             </table> -->
-                            </div>
+                            <!-- </div>
                         </div>
-                    </div>
-                            <div class="row justify-content-md-center content-scroll"> 
+                    </div> -->
+                            <!-- <div class="row justify-content-md-center content-scroll"> 
                                 <div class="col">
                                     <div class="box-dashed">
                                     <span>INDIKATOR</span> 
@@ -187,7 +187,7 @@
                                             <td>{{ $t->ya}}</td>
                                         </tr>
                                         @endforeach
-                                        </table>
+                                        </table> -->
                                                 <!-- <br>
                                                 <br>
                                                 <tr> Batuk  : </tr>
@@ -215,14 +215,14 @@
                                             <!-- </td>
                                         </tr>
                                         </table> -->
-                                    </div>
+                                    <!-- </div>
                                 </div>
-                            </div>
+                            </div> -->
                             
                             
 						</div>
                         </div>
-                        <p>
+                        <!-- <p>
                                  Berikut hal yang bisa Anda lakukan dan rekomendasi agar tetap aman:
                                 <ul>
                                     <li>  Anda diimbau untuk tetap di rumah untuk melindungi diri sendiri dan orang di sekitar Anda</li>
@@ -231,7 +231,7 @@
                                     <li> Lakukan 3M: menggunakan masker, mencuci tangan, dan menjaga jarak</li>
                                     <li> Jika muncul gejala atau gejala bertambah parah, segera hubungi fasilitas layanan kesehatan</li>
                                 </ul>
-                            </p>
+                            </p> -->
 			            </section>
 			            <!-- SECTION 3 -->
 			            <h2>
@@ -241,14 +241,14 @@
 			            <section>
 			                <div class="inner">
 								<h3>Hasil Test</h3>
-								<div class="form-row">
-                                <div class="row justify-content-md-center content-scroll"> 
-                          	<div class="col">
+								 <!-- <div class="form-row">
+                                <div class="row justify-content-md-center content-scroll">  -->
+                          	<!--<div class="col">
                             <div class="box-dashed">
-                            <span>IDENTITAS</span> 
+                            <span>IDENTITAS</span>  -->
                             <!-- <table>
                                 <tr> -->
-                                    <br>
+                                    <!-- <br>
                                     <br>
                                     Nama    :   {{Session::get('nama')}}
                                     <br>
@@ -265,21 +265,21 @@
                                     No Hp   :   {{Session::get('no')}}
                                     <br>
                                     <br>
-                                    Kota    :   {{Session::get('kota')}}
+                                    Kota    :   {{Session::get('kota')}} -->
                                     
                                 <!-- </tr>
                             </table> -->
-                            </div>
+                            <!-- </div>
                         </div>
-                    </div>
-                            <div class="row justify-content-md-center content-scroll"> 
+                    </div> -->
+                            <!-- <div class="row justify-content-md-center content-scroll"> 
                                 <div class="col">
                                     <div class="box-dashed">
-                                    <span>INDIKATOR</span> 
+                                    <span>INDIKATOR</span>  -->
                                         <!-- <table>
                                         <tr>
                                             <td> -->
-                                                <br>
+                                                <!-- <br>
                                                 <br>
                                                 <tr> Batuk  : </tr>
                                                 <br>
@@ -300,17 +300,17 @@
                                                 <br>
                                                 <br>
                                                 <tr> Memiliki riwayat perjalanan/tinggal diluar negeri yang melakukan penularan lokal   :</tr>
-                                                <!-- <br>
+                                                 <br>
                                                 <br>
                                                 <tr> Memiliki riwayat perjalanan/tinggal diarea penularan lokal di Indonesia   :</tr> -->
                                             <!-- </td>
-                                        </tr>
-                                        </table> -->
+                                        </tr>-->
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                             
-                            <div class="row justify-content-md-center content-scroll"> 
+                            <!-- <div class="row justify-content-md-center content-scroll"> 
                                 <div class="col">
                                     <div class="box-dashed">
                                     <span>INDIKATOR</span> 
@@ -319,24 +319,24 @@
                                         </table>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 						</div>
                         </div>
-							<p>
+							<!-- <p>
                                  Hasil test menunjukkan bahwa anda:
                                 <ul>
                                     <li>  <b><u></u></b>
                                     Anda beresiko terkena covid-19 dan dalam kategori <b><u></u></b> terjangakit maupun menularkan ke orang lain sebagai bahan runjukan Selanjutnya
                                     kami sarankan anda bersedia untuk melakukan swab test di tempat yang sudah kami rujukan</p></li>
                                 </ul>
-                            </p>
+                            </p> -->
 
                             
-                            <div class="col-md-6 text-center">
-                            <a href="{{ route('unduh') }}" class="btn btn-primary">
+                            <!-- <div class="col-md-6 text-center">
+                            <a href="{{ route('unduh') }}" class="btn btn-primary"> -->
                             <!-- <i class="fas fa-trash"></i> -->
-                            <i class="fa fa-file-pdf"></i>
-                            Cetak Hasil Test
+                            <!-- <i class="fa fa-file-pdf"></i>
+                            Cetak Hasil Test -->
 
                             
 			            </section>

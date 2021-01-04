@@ -40,13 +40,18 @@
 					<h3 class="heading">Deteksi Mandiri COVID-19</h3>
 					<p>Isilah Pertanyaan-Pertanyaan Berikut Sesuai Dengan Kondisi Anda</p>
 				</div>
-                <form class="form-register" action="" method="post">
+                <form class="form-register" action="#" method="post">
 		        	<div id="form-total">
                         <!-- SECTION 1 -->
                         <h2>
 			            	<span class="step-icon"><i class="zmdi zmdi-account"></i></span>
 			            	<span class="step-text">Profile</span>
 			            </h2>
+                        @if (session('status'))
+        <div class="alert alert-success">
+           {{ session('status') }}
+        </div>
+          @endif 
 			            <section>
 			                <div class="inner">
 			                	<h3>Konfirmasi Data Diri</h3>
