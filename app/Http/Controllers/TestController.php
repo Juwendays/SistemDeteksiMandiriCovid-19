@@ -85,14 +85,17 @@ class TestController extends Controller
             if($hasil>=0 && $hasil<=35){
               $keterangan = "Resiko Rendah";
               $rawat= "Jaga Kondisi dan Ikuti Protokol Kesehatan";
+              $result = "1";
             }
             else if($hasil>36 && $hasil<=66){
               $keterangan = "Resiko Rentan";
               $rawat= "direkomendasikan";
+              $result = "2";
             }
             else{
               $keterangan = "Resiko Tinggi";
               $rawat= "Harus rawat";
+                $result = "3";
             }
         
             // $data = new Hasil();
@@ -102,7 +105,8 @@ class TestController extends Controller
             Hasil::insert([
                      'persentase'=> $hasil,
                      'keterangan'=> $keterangan,
-                     'hasil'    => $rawat
+                     'hasil'    => $rawat,
+                     'id_result' => $result
                      ]);
 
 

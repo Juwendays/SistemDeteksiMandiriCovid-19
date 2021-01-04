@@ -25,8 +25,6 @@ Route::post('/biodata/store','BiodataController@store')->name('storebiodata');
 Route::get('/login','LoginController@login')->name('login');
 Route::post('/loginPost', 'LoginController@loginPost')->name('loginpost');
 
-
-
 Route::group(['middleware' => 'CekLoginMiddleware'], function(){
 
     Route::get('/logout', 'LoginController@logout')->name('logout');

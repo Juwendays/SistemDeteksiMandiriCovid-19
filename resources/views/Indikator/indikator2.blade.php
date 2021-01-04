@@ -352,7 +352,7 @@
 
                             
                             <div class="col-md-6 text-center">
-                            <a href="{{ route('unduh') }}" class="btn btn-primary">
+                            <a href="{{ route('unduh') }}" class="btn btn-primary" target="blank">
                             <!-- <i class="fas fa-trash"></i> -->
                             <i class="fa fa-file-pdf"></i>
                             Cetak Hasil Test

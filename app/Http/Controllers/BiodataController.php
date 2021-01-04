@@ -61,6 +61,7 @@ class BiodataController extends Controller
 
         //Menyimpan inputan ke dalam database
         $data = new Biodata();
+        $data->no_test = uniqid();
         $data->nik = $request->nik;
         $data->nama = $request->nama;
         $data->lahir = $request->lahir;
