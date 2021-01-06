@@ -48,7 +48,7 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="{{ route('dashboard') }}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
@@ -75,7 +75,7 @@
           <span>Table Rekap Hasil Test</span></a>
       </li>
 
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="{{ route('rekapsoal')}}">
           <i class="fas fa-fw fa-table"></i>
           <span>Table Rekap Indikator</span></a>

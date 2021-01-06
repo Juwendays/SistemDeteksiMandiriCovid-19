@@ -125,11 +125,13 @@
                         <!-- <input type="submit" class="btn btn-primary" name="submit" value="Lihat Hasil Test" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?')"> -->
                         <!-- <a href="{{ url('/test/hasil') }}" class="btn btn-primary"> -->
                         <td>
-                        <input type="submit" class="btn btn-primary" name="submit" value="Simpan Jawaban" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?')">
+                        <div class="wizard-headerlink">
+                        <input type="submit" class="btn btn-success" name="submit" value="Simpan Jawaban" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?')">
                             <!-- <i class="fas fa-trash"></i> -->
                             <!-- <i class="fa fa-file-pdf"></i> -->
                             <!-- <a href="{{ route('indikator') }}" class="btn btn-primary"> -->
-                            <i class="fas fa-trash"></i>
+                            <!-- <i class="fas fa-save"></i>-->
+                        </div>
                             
                             </a>
                             </td>
@@ -151,7 +153,7 @@
 			                	<h3>Rangkuman Test</h3>
 			                	<div class="form-row">
                                 <!-- <div class="row justify-content-md-center content-scroll"> -->
-                                <div class="alert alert-primary" role="alert">
+                                <div class="alert alert-danger" role="alert">
                                     Anda Belum Mennyimpan Jawaban Anda, Silahkan Kembali Ke Halaman Indikator
                                 </div> 
                           	<!-- <div class="col">
@@ -248,7 +250,7 @@
 			            <section>
 			                <div class="inner">
 								<h3>Hasil Test</h3>
-                                <div class="alert alert-primary" role="alert">
+                                <div class="alert alert-danger" role="alert">
                                     Anda Belum Mennyimpan Jawaban Anda
                                 </div> 
 								 <!-- <div class="form-row">

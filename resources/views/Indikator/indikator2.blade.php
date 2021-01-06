@@ -101,9 +101,12 @@
 			            </h2>
 			            <section>
 			                <div class="inner">
-			                	<h3>Indikator Sudah Anda Jawab</h3>
+			                	<h3>Indikator</h3>
 			                	<div class="form-row table-responsive">
-									<table class="table">
+                                <div class="alert alert-success" role="alert">
+                                    Jawaban Anda Berhasil Tersimpan
+                                </div> 
+									<!-- <table class="table"> -->
 									<!-- <form class="form-register" action="{{ route('test') }}" method="post"> -->
                                     <!-- <form class="form-register" action="{{ route('test') }}" method="post"> -->
                                     <!-- @csrf
@@ -162,15 +165,22 @@
                                 <div class="row justify-content-md-center content-scroll"> 
                           	<div class="col">
                             <div class="box-dashed">
-                            <span>IDENTITAS</span> 
+                            <span>IDENTITAS</span>
+                            <hr> 
                             <!-- <table>
                                 <tr> -->
+                                <!-- <br> -->
+                                    <!-- <br> -->
+                                    No Test    :   {{Session::get('no_test')}}
                                     <br>
                                     <br>
                                     Nama    :   {{Session::get('nama')}}
                                     <br>
                                     <br>
                                     Nik     :   {{Session::get('nik')}}
+                                    <br>
+                                    <br>
+                                    Tanggal Lahir   :   {{Session::get('lahir')}}
                                     <br>
                                     <br>
                                     Email   :   {{Session::get('email')}}
@@ -192,15 +202,22 @@
                             <div class="row justify-content-md-center content-scroll"> 
                                 <div class="col">
                                     <div class="box-dashed">
-                                    <span>INDIKATOR</span> 
-                                        <table>
+                                    <span>INDIKATOR</span>
+                                    <hr>
+                                    <!-- <br> -->
+                                    <!-- <br> -->
+                                    <table>
                                         @foreach ($tests as $t)
                                         <tr>
                                             <td>{{ $t->indikator}}</td>
-                                            <td>{{ $t->ya }}</td>
-                                        </tr>
-                                        @endforeach
+                                    
+                                            @endforeach
+                                            
+                                         </tr>
                                         </table>
+                                        <!-- <table>
+                                        <tr>
+                                            <td> -->
                                                 <!-- <br>
                                                 <br>
                                                 <tr> Batuk  : </tr>
@@ -232,7 +249,22 @@
                                 </div>
                             </div>
                             
-                            
+                            <div class="row justify-content-md-center content-scroll"> 
+                                <div class="col">
+                                    <div class="box-dashed">
+                                    <span>Jawaban</span>
+                                    <hr>
+                                    <!-- <br> -->
+                                    <!-- <br>  -->
+                                        <table>
+										@foreach ($pilihan as $pilih)   
+                                            <td>{{  $pilih  }}</td>
+                                        </tr>
+                                        @endforeach
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
 						</div>
                         </div>
                         <p>
@@ -372,39 +404,19 @@
                             </p>
 
                             
-                            <div class="col-md-6 text-center">
-                            <a href="{{ route('unduh') }}" class="btn btn-primary" target="blank">
-                            <!-- <i class="fas fa-trash"></i> -->
+                            <!-- <div class="col-md-6 text-center"> -->
+                            <div class="wizard-headerlink" class="d-inline">
+                            <a href="{{ route('unduh') }}" class="btn btn-success" target="blank">
                             <i class="fa fa-file-pdf"></i>
-                            Cetak Hasil Test
-                            </div>
-
-                            <div class="col-md-6 text-center">
-                            <a href="{{ route('selesai') }}" class="btn btn-primary">
-                            <!-- <i class="fas fa-trash"></i> -->
-                            <i class="fa fa-file-pdf"></i>
-                            Akhiri Test
+                            Cetak Hasil Test</a>
+                            
+                            <a href="{{ route('selesai') }}" class="btn btn-danger">
+                            <i class="fa fa-arrow-right"></i>
+                            Akhiri Test</a>
                             </div>
 
                             
-			            </section>
-			            <!-- SECTION 4 -->
-			            
-									<!-- <section>
-									<fieldset>
-                                <div class="form-card">
-                                    <h2 class="fs-title text-center">Success !</h2> <br><br>
-                                    <div class="row justify-content-center">
-                                        <div class="col-3"> <img src="https://img.icons8.com/color/96/000000/ok--v2.png" class="fit-image"> </div>
-                                    </div> <br><br>
-                                    <div class="row justify-content-center">
-                                        <div class="col-7 text-center">
-                                            <h5>You Have Successfully Signed Up</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </fieldset> -->
-						</section>
+			           
 		        	</div>
 		        </form>
 			</div>
