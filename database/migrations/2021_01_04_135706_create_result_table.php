@@ -15,7 +15,7 @@ class CreateResultTable extends Migration
     {
         Schema::create('results', function (Blueprint $table) {
             // $table->id();
-            $table->smallInteger('id_result')->primary();
+            $table->id();
             // $table->bigInteger('id_result')->primary();
             $table->string('desc_result');
             $table->string('img');

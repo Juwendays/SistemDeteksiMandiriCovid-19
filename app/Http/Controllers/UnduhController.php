@@ -11,11 +11,9 @@ class UnduhController extends Controller
     {
         // Menampilkan unduh pdf
         $pdf = PDF::loadview('unduh')->setPaper('A4','potrait');
+        return $pdf->download('hasiltestcovid.pdf');
         return $pdf->stream();
 
-        Session::flush();
-        Session::forget('nama',$data->nama);
-        Session::forget('nik',$data->nik);
-        Session::forget('alamat',$data->alamat);
+        $request->session()->flush();
     }
 }

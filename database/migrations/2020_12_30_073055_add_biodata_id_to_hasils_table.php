@@ -14,7 +14,7 @@ class AddBiodataIdToHasilsTable extends Migration
     public function up()
     {
         Schema::table('hasils', function (Blueprint $table) {
-            $table->foreignId('biodata_id')->nullable()->after('id');
+            $table->string('test_id',64)->nullable()->after('id');
         });
     }
 
@@ -26,7 +26,6 @@ class AddBiodataIdToHasilsTable extends Migration
     public function down()
     {
         Schema::table('hasils', function (Blueprint $table) {
-            //
         });
     }
 }

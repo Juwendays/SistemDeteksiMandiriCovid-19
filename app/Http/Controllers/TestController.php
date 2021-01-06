@@ -81,21 +81,26 @@ class TestController extends Controller
             $hasil = number_format($score,1);
             }
             
-            // $namaku = "Alvin Septo Juwenda";    
-            if($hasil>=0 && $hasil<=35){
+            // $namaku = "Alvin Septo Juwenda";
+            if($hasil>=0 && $hasil<=5){
+                $keterangan = "Resiko Rendah";
+                $rawat= "Tetap jaga kesehatan anda";
+                $result = "1";
+            }    
+            else if($hasil>=10 && $hasil<=35){
               $keterangan = "Resiko Rendah";
               $rawat= "Jaga Kondisi dan Ikuti Protokol Kesehatan";
-              $result = "1";
+              $result = "2";
             }
             else if($hasil>36 && $hasil<=66){
               $keterangan = "Resiko Rentan";
               $rawat= "direkomendasikan";
-              $result = "2";
+              $result = "3";
             }
             else{
               $keterangan = "Resiko Tinggi";
               $rawat= "Harus rawat";
-                $result = "3";
+                $result = "4";
             }
         
             // $data = new Hasil();
@@ -103,10 +108,11 @@ class TestController extends Controller
             // $data->keterangan = $keterangan;
         
             Hasil::insert([
+                    'test_id'=> uniqid(),
                      'persentase'=> $hasil,
                      'keterangan'=> $keterangan,
                      'hasil'    => $rawat,
-                     'id_result' => $result
+                     'result_id' => $result
                      ]);
 
 

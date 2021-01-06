@@ -32,5 +32,6 @@
        </u></b> terjangakit maupun menularkan ke orang lain sebagai bahan runjukan Selanjutnya
      kami sarankan anda bersedia untuk melakukan swab test di tempat yang sudah kami rujukan</p>
 
+      $hasil->result;
  </body>
  </html>

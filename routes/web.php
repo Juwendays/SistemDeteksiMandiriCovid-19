@@ -25,7 +25,7 @@ Route::post('/biodata/store','BiodataController@store')->name('storebiodata');
 Route::get('/login','LoginController@login')->name('login');
 Route::post('/loginPost', 'LoginController@loginPost')->name('loginpost');
 
-Route::group(['middleware' => 'CekLoginMiddleware'], function(){
+// Route::group(['middleware' => 'CekLoginMiddleware'], function(){
 
     Route::get('/logout', 'LoginController@logout')->name('logout');
 
@@ -46,7 +46,7 @@ Route::group(['middleware' => 'CekLoginMiddleware'], function(){
     Route::get('/test/{test}/edit', 'AdminController@edit')->name('editsoal');
     Route::patch('/test/{test}', 'AdminController@update')->name('updatesoal');
     Route::post('/test/create', 'AdminController@create')->name('buatsoal');
-});
+// });
 
 //Halaman Unduh
 Route::get('/unduh','UnduhController@unduh')->name('unduh');

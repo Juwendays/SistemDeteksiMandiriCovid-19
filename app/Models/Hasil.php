@@ -8,9 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class Hasil extends Model
 {
     use HasFactory;
+    protected $fillable =['id','test_id','persentase','keterangan','hasil','id_result'];
 
-    public function biodatas()
+    public function result()
     {
-    	return $this->hasMany(Biodata::class);
+    	return $this->belongsTo(Result::class);
     }
 }

@@ -140,13 +140,16 @@
 						<!-- SECTION 2 -->
 			            <h2>
 			            	<span class="step-icon"><i class="zmdi zmdi-lock"></i></span>
-			            	<span class="step-text">Personal</span>
+			            	<span class="step-text">Rangkuman</span>
 			            </h2>
 			            <section>
 			                <div class="inner">
 			                	<h3>Rangkuman Test</h3>
 			                	<div class="form-row">
-                                <div class="row justify-content-md-center content-scroll"> 
+                                <!-- <div class="row justify-content-md-center content-scroll"> -->
+                                <div class="alert alert-primary" role="alert">
+                                    Anda Belum Mennyimpan Jawaban Anda, Silahkan Kembali Ke Halaman Indikator
+                                </div> 
                           	<!-- <div class="col">
                             <div class="box-dashed">
                             <span>IDENTITAS</span>  -->
@@ -241,8 +244,12 @@
 			            <section>
 			                <div class="inner">
 								<h3>Hasil Test</h3>
+                                <div class="alert alert-primary" role="alert">
+                                    Anda Belum Mennyimpan Jawaban Anda
+                                </div> 
 								 <!-- <div class="form-row">
-                                <div class="row justify-content-md-center content-scroll">  -->
+                                <div class="row justify-content-md-center content-scroll"> -->
+                                
                           	<!--<div class="col">
                             <div class="box-dashed">
                             <span>IDENTITAS</span>  -->

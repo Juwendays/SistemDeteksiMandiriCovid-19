@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Biodata;
+use App\Models\Hasil;
 use Session;
 use Validator;
 
@@ -71,7 +72,13 @@ class BiodataController extends Controller
         $data->kota = $request->kota;
         $data->foto = $foto;
         $data->fotoktp = $fotoktp;
-        $data->save(); 
+        $data->save();
+        
+        // $hasil = new Hasil;
+
+        // $hasil->biodata_id = uniqid();
+        // $hasil->save();
+        Hasil::wherebiodata_id($data->no_test);
 
         // Menyimpan session
         Session::put('nama',$data->nama);
