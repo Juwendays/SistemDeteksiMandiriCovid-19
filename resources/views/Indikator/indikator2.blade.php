@@ -58,6 +58,10 @@
 			                	<div class="form-row table-responsive">
 									<table class="table">
 										<tbody>
+                                            <tr class="space-row">
+												<th>No Test :</th>
+												<td>{{Session::get('no_test')}}</td>
+											</tr>
 											<tr class="space-row">
 												<th>Nomor Identitas :</th>
 												<td>{{Session::get('nik')}}</td>
@@ -65,6 +69,10 @@
 											<tr class="space-row">
 												<th>Nama Pengguna :</th>
 												<td>{{Session::get('nama')}}</td>
+											</tr>
+                                            <tr class="space-row">
+												<th>Tanggal Lahir :</th>
+												<td>{{Session::get('lahir')}}</td>
 											</tr>
 											<tr class="space-row">
 												<th>Alamat Pengguna :</th>
@@ -250,15 +258,22 @@
                                 <div class="row justify-content-md-center content-scroll"> 
                           	<div class="col">
                             <div class="box-dashed">
-                            <span>IDENTITAS</span> 
+                            <span>IDENTITAS</span>
+                            <hr> 
                             <!-- <table>
                                 <tr> -->
+                                <!-- <br> -->
+                                    <!-- <br> -->
+                                    No Test    :   {{Session::get('no_test')}}
                                     <br>
                                     <br>
                                     Nama    :   {{Session::get('nama')}}
                                     <br>
                                     <br>
                                     Nik     :   {{Session::get('nik')}}
+                                    <br>
+                                    <br>
+                                    Tanggal Lahir   :   {{Session::get('lahir')}}
                                     <br>
                                     <br>
                                     Email   :   {{Session::get('email')}}
@@ -280,7 +295,10 @@
                             <div class="row justify-content-md-center content-scroll"> 
                                 <div class="col">
                                     <div class="box-dashed">
-                                    <span>INDIKATOR</span> 
+                                    <span>INDIKATOR</span>
+                                    <hr>
+                                    <!-- <br> -->
+                                    <!-- <br> -->
                                     <table>
                                         @foreach ($tests as $t)
                                         <tr>
@@ -327,7 +345,10 @@
                             <div class="row justify-content-md-center content-scroll"> 
                                 <div class="col">
                                     <div class="box-dashed">
-                                    <span>Jawaban</span> 
+                                    <span>Jawaban</span>
+                                    <hr>
+                                    <!-- <br> -->
+                                    <!-- <br>  -->
                                         <table>
 										@foreach ($pilihan as $pilih)   
                                             <td>{{  $pilih  }}</td>
@@ -356,6 +377,14 @@
                             <!-- <i class="fas fa-trash"></i> -->
                             <i class="fa fa-file-pdf"></i>
                             Cetak Hasil Test
+                            </div>
+
+                            <div class="col-md-6 text-center">
+                            <a href="{{ route('selesai') }}" class="btn btn-primary">
+                            <!-- <i class="fas fa-trash"></i> -->
+                            <i class="fa fa-file-pdf"></i>
+                            Akhiri Test
+                            </div>
 
                             
 			            </section>

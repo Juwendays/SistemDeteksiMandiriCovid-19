@@ -53,6 +53,10 @@
 			                	<div class="form-row table-responsive">
 									<table class="table">
 										<tbody>
+                                        <tr class="space-row">
+												<th>No Test :</th>
+												<td>{{Session::get('no_test')}}</td>
+											</tr>
 											<tr class="space-row">
 												<th>Nomor Identitas :</th>
 												<td>{{Session::get('nik')}}</td>
@@ -121,7 +125,7 @@
                         <!-- <input type="submit" class="btn btn-primary" name="submit" value="Lihat Hasil Test" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?')"> -->
                         <!-- <a href="{{ url('/test/hasil') }}" class="btn btn-primary"> -->
                         <td>
-                        <input type="submit" class="btn btn-primary" name="submit" value="Lihat Hasil Test" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?')">
+                        <input type="submit" class="btn btn-primary" name="submit" value="Simpan Jawaban" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?')">
                             <!-- <i class="fas fa-trash"></i> -->
                             <!-- <i class="fa fa-file-pdf"></i> -->
                             <!-- <a href="{{ route('indikator') }}" class="btn btn-primary"> -->

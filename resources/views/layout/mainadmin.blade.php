@@ -198,7 +198,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Diskominfo Jateng 2020</span>
+            <span>© Copyright Pemerintah Provinsi Jawa Tengah. All Rights Reserved 2020</span>
           </div>
         </div>
       </footer>

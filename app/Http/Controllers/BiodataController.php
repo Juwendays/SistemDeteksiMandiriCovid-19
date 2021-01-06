@@ -63,6 +63,7 @@ class BiodataController extends Controller
         //Menyimpan inputan ke dalam database
         $data = new Biodata();
         $data->no_test = uniqid();
+        session(['no_test'=> true]);
         $data->nik = $request->nik;
         $data->nama = $request->nama;
         $data->lahir = $request->lahir;
@@ -74,6 +75,7 @@ class BiodataController extends Controller
         $data->fotoktp = $fotoktp;
         $data->save();
         
+        
         // $hasil = new Hasil;
 
         // $hasil->biodata_id = uniqid();
@@ -83,6 +85,7 @@ class BiodataController extends Controller
         // Menyimpan session
         Session::put('nama',$data->nama);
         Session::put('nik',$data->nik);
+        Session::put('no_test',$data->no_test);
         Session::put('lahir',$data->lahir);
         Session::put('alamat',$data->alamat);
         Session::put('email',$data->email);

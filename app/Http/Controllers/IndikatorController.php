@@ -23,4 +23,9 @@ class IndikatorController extends Controller
 
         return view('Indikator.indikator2',['tests' => $tests]);
     }
+
+    public function selesai(Request $request){
+        $request->session()->flush();
+        return redirect('/');
+    }
 }
