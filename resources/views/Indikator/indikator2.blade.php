@@ -411,7 +411,7 @@
 		</div>
 	</div>
 	<script src="{{ asset('assets/multiple/js/jquery-3.3.1.min.js') }}"></script>
-	<script src="{{ asset('assets/multiple/js/jquery.steps.js') }}"></script>
+	<script src="{{ asset('assets/multiple/js/jquery.steps2.js') }}"></script>
 	<script src="{{ asset('assets/multiple/js/jquery-ui.min.js') }}"></script>
 	<script src="{{ asset('assets/multiple/js/main.js') }}"></script>
     

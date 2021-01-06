@@ -8,7 +8,7 @@ $(function(){
         transitionEffectSpeed: 500,
         titleTemplate : '<div class="title">#title#</div>',
         labels: {
-            previous : 'Previous',
+            previous : 'Sebelumnya',
             next : 'Selanjutnya',
             finish : 'Selesai',
             current : ''
