@@ -35,13 +35,13 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav m-auto">
-              <li class="nav-item active">
+              <li class="nav-item {{ request()->is('/')? 'active' : ''}}" >
                   <a class="nav-link" href="{{ route('index') }}">Home <span class="sr-only">(current)</span></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item {{ request()->is('about')? 'active' : ''}}">
                   <a class="nav-link" href="{{ route('about') }}">Tentang Kami</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item {{ request()->is('biodata')? 'active' : ''}}">
                   <a class="nav-link" href="{{ route('biodata') }}">Test</a>
               </li>
               <li class="nav-item">
