@@ -492,6 +492,11 @@ a.navbar-brand.navbar-link{
 	padding: 30px 0 5px;
 }
 
+.wizard-headersimpan {
+	text-align: center;
+	padding: 30px 0 30px;
+}
+
 .wizard-form .wizard-header .heading {
 	color: #333;
 	font-size: 32px;

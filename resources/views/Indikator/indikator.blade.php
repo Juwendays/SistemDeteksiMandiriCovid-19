@@ -17,12 +17,6 @@
 
     <link href="{{ asset('assets/img/jateng1.png')}}" style="width:50px;height:50px" rel="shortcut icon">
 
-
-
-<!-- Custom styles for this template -->
-<!-- <link href="{{ asset('assets/sbadmin/css/sb-admin-2.min.css') }}" rel="stylesheet"> -->
-
-
 </head>
 
 <body>
@@ -42,7 +36,7 @@
 				</div>
                 <form class="form-register" action="{{ route('test') }}" method="post">
 		        	<div id="form-total">
-                        <!-- SECTION 1 -->
+                        <!-- SECTION KONFORMASI DATA -->
                         <h2>
 			            	<span class="step-icon"><i class="zmdi zmdi-account"></i></span>
 			            	<span class="step-text">Profile</span>
@@ -109,9 +103,7 @@
                                         <td>
                                             <div id="radio">
                                                 <input name="pilihan[{{ $t->id}}]" type="radio" value="Ya"> {{ $t->ya }}</font></td>
-
                                                 <td><input name="pilihan[{{ $t->id}}]" type="radio" value="Tidak">{{ $t->tidak }}</font></td>
-									    
                                                 </div>
                                             </td>
                                         </tr>
@@ -125,28 +117,21 @@
                         <!-- <input type="submit" class="btn btn-primary" name="submit" value="Lihat Hasil Test" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?')"> -->
                         <!-- <a href="{{ url('/test/hasil') }}" class="btn btn-primary"> -->
                         <td>
-                        <div class="wizard-headerlink">
+                        <div class="wizard-header">
                         <input type="submit" class="btn btn-success" name="submit" value="Simpan Jawaban" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?')">
-                            <!-- <i class="fas fa-trash"></i> -->
-                            <!-- <i class="fa fa-file-pdf"></i> -->
-                            <!-- <a href="{{ route('indikator') }}" class="btn btn-primary"> -->
                             <!-- <i class="fas fa-save"></i>-->
                         </div>
-                            
-                            </a>
-                            </td>
-                            </table>
-							</form>
-                                    </div>
-                                    
-                                    
-						</div>
+                        </td>
+                    </table>
+				</form>
+            </div>   
+		</div>
                         
 			            </section>
-						<!-- SECTION 2 -->
+						<!-- SECTION SOAL INDIKATOR -->
 			            <h2>
 			            	<span class="step-icon"><i class="zmdi zmdi-lock"></i></span>
-			            	<span class="step-text">Rangkuman</span>
+			            	<span class="step-text">Rekap</span>
 			            </h2>
 			            <section>
 			                <div class="inner">
@@ -154,7 +139,7 @@
 			                	<div class="form-row">
                                 <!-- <div class="row justify-content-md-center content-scroll"> -->
                                 <div class="alert alert-danger" role="alert">
-                                    Anda Belum Mennyimpan Jawaban Anda, Silahkan Kembali Ke Halaman Indikator
+                                    Anda Belum Menyimpan Jawaban Anda, Silahkan Kembali Ke Halaman Indikator
                                 </div> 
                           	<!-- <div class="col">
                             <div class="box-dashed">
@@ -251,7 +236,7 @@
 			                <div class="inner">
 								<h3>Hasil Test</h3>
                                 <div class="alert alert-danger" role="alert">
-                                    Anda Belum Mennyimpan Jawaban Anda
+                                Anda Belum Menyimpan Jawaban Anda, Silahkan Kembali Ke Halaman Indikator
                                 </div> 
 								 <!-- <div class="form-row">
                                 <div class="row justify-content-md-center content-scroll"> -->

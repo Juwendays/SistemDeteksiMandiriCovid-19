@@ -340,36 +340,6 @@
                                             
                                          </tr>
                                         </table>
-                                        <!-- <table>
-                                        <tr>
-                                            <td> -->
-                                                <!-- <br>
-                                                <br>
-                                                <tr> Batuk  : </tr>
-                                                <br>
-                                                <br>
-                                                <tr> Demam/Pilek  :</tr>
-                                                <br>
-                                                <br>
-                                                <tr> Kesulitan Bernafas/Sesak Nafas  :</tr>
-                                                <br>
-                                                <br>
-                                                <tr> Nyeri Tenggorokan :</tr>
-                                                <br>
-                                                <br>
-                                                <tr> Lama Penyakit Kurang dari 14 Hari  :</tr>
-                                                <br>
-                                                <br>
-                                                <tr> kontak dengan penderita/probabel COVID-19   :</tr>
-                                                <br>
-                                                <br>
-                                                <tr> Memiliki riwayat perjalanan/tinggal diluar negeri yang melakukan penularan lokal   :</tr> -->
-                                                <!-- <br>
-                                                <br>
-                                                <tr> Memiliki riwayat perjalanan/tinggal diarea penularan lokal di Indonesia   :</tr> -->
-                                            <!-- </td>
-                                        </tr>
-                                        </table> -->
                                     </div>
                                 </div>
                             </div>
@@ -391,7 +361,6 @@
                                 </div>
                             </div>
                            
-         
 						</div>
                         </div>
 							<p>
@@ -403,7 +372,6 @@
                                 </ul>
                             </p>
 
-                            
                             <!-- <div class="col-md-6 text-center"> -->
                             <div class="wizard-headerlink" class="d-inline">
                             <a href="{{ route('unduh') }}" class="btn btn-success" target="blank">
