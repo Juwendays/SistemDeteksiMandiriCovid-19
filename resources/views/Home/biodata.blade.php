@@ -36,97 +36,92 @@
         @csrf
         <table border="0" cellpadding="5">
         
-        <tr>
-          <div class="form-group">
-          <td>
-            <label for="nik">NIK Sesuai KTP</label>
-          </td>
-          <td>
-            <input type="text"  class="form-control @error('nik') is-invalid @enderror" name="nik" id="nik" placeholder="Masukan Nomor Induk Kependudukan" value="{{ old('nik') }}">
+          <div class="form-group row">
+            <label for="nik" class="col-sm-5 col-form-label">NIK Sesuai KTP</label>
 
+            <div class="col-sm-7">
+            <input type="text"  class="form-control @error('nik') is-invalid @enderror" name="nik" id="nik" placeholder="Masukan Nomor Induk Kependudukan" value="{{ old('nik') }}">
+            
             @error('nik')
             <div class="invalid-feedback">{{ $message }}</div>
             @enderror
-
-          </td>
           </div>
-        </tr>
+          </div>
 
+ 
+          <div class="form-group row">
+            <label for="nama" class="col-sm-5 col-form-label">Nama Lengkap</label>
 
-        <tr>
-          <td>
-            <label for="nama">Nama Lengkap Sesuai KTP</label>
-          </td>
-          <td>
-            <input type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" id="nama" placeholder="Masukan Nama" value="{{ old('nama') }}">
+            <div class="col-sm-7">
+                <input type="text" class="form-control @error('nama') is-invalid @enderror" name="nama" id="nama" placeholder="Masukan Nama" value="{{ old('nama') }}">
+            
 
             @error('nama')
             <div class="invalid-feedback">{{ $message }}</div>
             @enderror
+            </div>  
+            </div>
 
-          </td>
-        </tr>
+            <div class="form-group row">
+                <label for="lahir" class="col-sm-5 col-form-label">Tanggal Lahir</label>
 
-        <tr>
-          <td>
-            <label for="lahir">Tanggal Lahir</label>
-          </td>
-          <td>
-            <input type="date" class="form-control @error('lahir') is-invalid @enderror" name="lahir" id="lahir" placeholder="Masukan Tanggal Lahir" value="{{ old('lahir') }}">
+                <div class="col-sm-7">
+                  <input type="date" class="form-control @error('lahir') is-invalid @enderror" name="lahir" id="lahir" placeholder="Masukan Tanggal Lahir" value="{{ old('lahir') }}">
+                
 
-            @error('lahir')
-            <div class="invalid-feedback">{{ $message }}</div>
-            @enderror
+                    @error('lahir')
+                      <div class="invalid-feedback">{{ $message }}</div>
+                    @enderror
+                    </div>
+                </div>
 
-          </td>
-        </tr>
 
-        <tr>
-          <td>
-            <label for="email">E-mail</label>
-          </td>
-          <td>
+            <div class="form-group row">
+              
+                <label for="email" class="col-sm-5 col-form-label">E-mail</label>
+              
+
+              <div class="col-sm-7 ">
             <input type="text" class="form-control @error('email') is-invalid @enderror" name="email" placeholder="Masukan E-mail" value="{{ old('email') }}">
+            
 
             @error('email')
             <div class="invalid-feedback">{{ $message }}</div>
             @enderror
+            </div>
+</div>
 
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            <label for="alamat">Alamat</label>
-          </td>
-          <td>
+            <div class="form-group row">
+            <label for="alamat" class="col-sm-5 col-form-label">Alamat</label>
+ 
+            <div class="col-sm-7 ">
             <input type="text" class="form-control @error('alamat') is-invalid @enderror" name="alamat" id="alamat" placeholder="Masukan Alamat Lengkap" value="{{ old('alamat') }}">
+            
 
             @error('alamat')
             <div class="invalid-feedback">{{ $message }}</div>
             @enderror
-          </td>
-        </tr>
+            </div>
+</div>
 
-        <tr>
-          <td>
-            <label for="no">No HP/WA</label>
-          </td>
-          <td>
-            <input type="text"  class="form-control @error('no') is-invalid @enderror" name="no" id="no" placeholder="Masukan No.Telpon/No.WA" value="{{ old('no') }}">
+            <div class="form-group row">
+            <label for="no" class="col-sm-5 col-form-label">No HP/WA</label>
+ 
+            <div class="col-sm-7 ">
+            <input type="text" class="form-control @error('no') is-invalid @enderror" name="no" id="no" placeholder="Masukan No.Telpon/No.WA" value="{{ old('no') }}">
+            
 
             @error('no')
             <div class="invalid-feedback">{{ $message }}</div>
             @enderror
+            </div>
+</div>
 
-          </td>
-        </tr>
+            <div class="form-group row">
 
-        <tr>
-          <td>
-            <label for="kota">Kabupaten/Kota</label>
-          </td>
-          <td>
+            <label for="kota" class="col-sm-5 col-form-label">Kabupaten/Kota</label>
+
+              <div class="col-sm-7 ">
             <select class="custom-select-sm @error('kota') is-invalid @enderror" name="kota" id="kota" value="{{ old('kota') }}">
                 <option selected>Pilih Kota/Kabupaten</option>
                 <option value="banjarnegara">BANJARNEGARA</option>
@@ -165,47 +160,46 @@
                 <option>KOTA PEKALONGAN</option>
                 <option>KOTA TEGAL</option>
             </select>
+            
             @error('kota')
             <div class="invalid-feedback">{{ $message }}</div>
             @enderror
-          </td>
+            </div>
+            </div>
 
-        <tr>
-          <td>
-            <label for="foto">Upload Foto 3*4</label>
-          </td>
-          <td>
+            <div class="form-group row">
+                <label for="foto" class="col-sm-5 col-form-label">Upload Foto 3*4</label>
               <!-- <img src="foto.jpg" width="100"> -->
-            <input type="file" name="foto" id="foto" class="@error('foto') is-invalid @enderror" value="{{ old('foto') }}">
-            @error('foto')
-            <div class="invalid-feedback">{{ $message }}</div>
-            @enderror
-          </td>
-        </tr>
+              <div class="col-sm-7 ">
+                <input type="file" name="foto" id="foto" class="@error('foto') is-invalid @enderror" value="{{ old('foto') }}">
+                 
 
-        <tr>
-          <td>
-            <label for="fotoktp">Upload Foto KTP</label>
-          </td>
-          <td>
-              <!-- <img src="ktp.jpg" width="140"> -->
-            <input type="file" class="@error('fotoktp') is-invalid @enderror" name="fotoktp" id="fotoktp" value="{{ old('fotoktp') }}"> 
-            @error('fotoktp')
-            <div class="invalid-feedback">{{ $message }}</div>
-            @enderror
-          </td>
-        </tr>
+                @error('foto')
+                <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="fotoktp" class="col-sm-5 col-form-label">Upload Foto KTP</label>
+
+                <div class="col-sm-7 ">
+                <input type="file" class="form-control-file @error('fotoktp') is-invalid @enderror" name="fotoktp" id="fotoktp" value="{{ old('fotoktp') }}"> 
+                 
+
+                @error('fotoktp')
+                <div class="invalid-feedback">{{ $message }}</div>
+                @enderror
+                </div>
+            </div>
 
 
-        <tr>
-          <td colspan="2">
-            <center>
-              <div class="mt-4">
+<div class="mt-4">
+            <div class="d-flex justify-content-center">
             <button type="submit" name="submit" class="btn btn-primary">Submit</button>
                   </div>
-          </center>
-          </td>
-        </tr>
+</div>
+        
 
         </table>
       </form>   

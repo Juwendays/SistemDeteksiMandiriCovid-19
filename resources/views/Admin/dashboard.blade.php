@@ -103,7 +103,7 @@
 
 <div class="d-flex justify-content-center">
     <!-- <img src="{{ asset('assets/starter/images/jateng1.png')}}" alt="" style="width:400px;height:400px"> -->
-                              <h1>SELAMAT DATANG ADMIN</h1>
+                              <h1>SELAMAT DATANG, {{Session::get('name')}}</h1>
 </div>
 
 <!-- </div> -->
