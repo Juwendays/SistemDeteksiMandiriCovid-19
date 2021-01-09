@@ -116,12 +116,13 @@
                                
                         <!-- <input type="submit" class="btn btn-primary" name="submit" value="Lihat Hasil Test" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?')"> -->
                         <!-- <a href="{{ url('/test/hasil') }}" class="btn btn-primary"> -->
-                        <td>
+                        <td colspan="3">
                         <div class="wizard-header">
                         <input type="submit" class="btn btn-success" name="submit" value="Simpan Jawaban" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?')">
                             <!-- <i class="fas fa-save"></i>-->
                         </div>
                         </td>
+                        </tr>
                     </table>
 				</form>
             </div>   
@@ -353,7 +354,7 @@
 		</div>
 	</div>
 	<script src="{{ asset('assets/multiple/js/jquery-3.3.1.min.js') }}"></script>
-	<script src="{{ asset('assets/multiple/js/jquery.steps.js') }}"></script> -->
+	<script src="{{ asset('assets/multiple/js/jquery.steps.js') }}"></script>
 	<script src="{{ asset('assets/multiple/js/jquery-ui.min.js') }}"></script>
 	<script src="{{ asset('assets/multiple/js/main.js') }}"></script>
     
