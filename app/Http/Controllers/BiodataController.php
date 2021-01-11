@@ -60,10 +60,11 @@ class BiodataController extends Controller
         $foto = $request->file('foto')->store('foto','public');
         $fotoktp = $request->file('fotoktp')->store('fotoktp','public');
 
+        $id=uniqid();
+
         //Menyimpan inputan ke dalam database
         $data = new Biodata();
-        $data->no_test = uniqid();
-        session(['no_test'=> true]);
+        $data->no_test = $id;
         $data->nik = $request->nik;
         $data->nama = $request->nama;
         $data->lahir = $request->lahir;
@@ -73,9 +74,9 @@ class BiodataController extends Controller
         $data->kota = $request->kota;
         $data->foto = $foto;
         $data->fotoktp = $fotoktp;
+        session(['no_test'=> true]);
         $data->save();
-        
-        
+
         // $hasil = new Hasil;
 
         // $hasil->biodata_id = uniqid();
