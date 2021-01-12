@@ -46,7 +46,12 @@
                                     <div class="card-footer text-white clearfix small z-1">
                                         <span class="float-left">
                                             <blockquote class="blockquote">
-                                                Anda termasuk dalam pasien 
+                                                Anda termasuk dalam pasien
+                                                <p>Hasil Test Menunjukan bahwa
+                                                <b><u> {{Session::get('hasil')}} %</u></b>
+                                                anda beresiko terkena covid-19 dan dalam kategori <b> {{Session::get('keterangan')}} <u>
+                                                </u></b> terjangakit maupun menularkan ke orang lain sebagai bahan runjukan Selanjutnya
+                                                kami sarankan anda bersedia untuk melakukan swab test di tempat yang sudah kami rujukan</p>  
                                                 <b>Saran:</b><br>
                                                 <b>Edukasi:</b><br>
                                             </blockquote>
@@ -90,17 +95,10 @@
 
         </div>
         <!-- /#wrapper -->
-
 </body>
 
 </html>
 
-     <p>Hasil Test Menunjukan bahwa
-    <b><u> {{Session::get('hasil')}} %</u></b>
-       anda beresiko terkena covid-19 dan dalam kategori <b> {{Session::get('keterangan')}} <u>
-       </u></b> terjangakit maupun menularkan ke orang lain sebagai bahan runjukan Selanjutnya
-     kami sarankan anda bersedia untuk melakukan swab test di tempat yang sudah kami rujukan</p>
-
-      
+     
  </body>
  </html>
