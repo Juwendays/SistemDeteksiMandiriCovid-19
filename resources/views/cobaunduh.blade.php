@@ -6,11 +6,11 @@
     <link href="{{ asset('assets/sbadmin/css/sb-admin-2.min.css') }}" rel="stylesheet">
   </head>
   </body>
-  <!-- <div class="d-flex justify-content-center"> -->
+  <div class="d-flex justify-content-center">
     <h1>Pemerintah Provinsi Jawa Tengah
     <br>
     Surat Pernyataan Hasil Test Mandiri Covid-19</h1>
-<!-- </div> -->
+</div>
      <hr>
      <div class="card mb-3">
                     <div class="card-body">
@@ -37,19 +37,22 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-xl-3 col-sm-6 mb-3">
+                            <img src="{{ asset('/assets/image/{{ $hasil->result->img') }}" class="rounded mx-auto d-block w-75" alt="Result">
                             </div>
                             <div class="col-xl-9 col-sm-6 mb-9">
-                                <div class="card text-white o-hidden h-100 ">
+                                <div class="card text-white o-hidden h-100 {{ $hasil->result->bg }}">
                                     <div class="card-body">
                                         <div class="card-body-icon">
                                             <i class="fas fa-fw fa-comments"></i>
                                         </div>
                                         <div class="mr-5">
+                                       {{ $hasil->result->bg }}
                                         </div>
                                     </div>
                                     <div class="card-footer text-white clearfix small z-1">
                                         <span class="float-left">
                                             <blockquote class="blockquote">
+                                            <b>{{Session::get('nama')}}</b> 
                                                 Anda termasuk dalam pasien
                                                 <p>Hasil Test Menunjukan bahwa
                                                 <b><u> {{Session::get('hasil')}} %</u></b>
@@ -57,7 +60,9 @@
                                                 </u></b> terjangakit maupun menularkan ke orang lain sebagai bahan runjukan Selanjutnya
                                                 kami sarankan anda bersedia untuk melakukan swab test di tempat yang sudah kami rujukan</p> 
                                                 <b>Saran:</b><br>
+                                                {{ $result->saran }}<br><br>
                                                 <b>Edukasi:</b><br>
+                                                {{ $hasil->result->edukasi }}
                                             </blockquote>
                                         </span>
                                         <span class="float-right">

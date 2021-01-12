@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Halaman Indikator</title>
+	<title>Deteksi Mandiri COVID-19</title>
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Font-->
@@ -53,10 +53,10 @@
         </div>
           @endif 
 			            <section>
-                        '<div class="alert alert-success alert-dismissible">
-                <h4><i class="icon fa fa-info"></i> Berhasil!</h4>
+                        <div class="alert alert-success alert-dismissible">
+                <i class="icon fa fa-info"></i>
                 Berhasil Menyimpan Jawaban,Silahkan Lanjut ke Step berikutnya
-                </div>'
+                </div>
 			                <div class="inner">
 			                	<h3>Konfirmasi Data Diri</h3>
 			                	<div class="form-row table-responsive">

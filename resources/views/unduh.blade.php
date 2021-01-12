@@ -2,8 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Unduh Hasil Test</title>
+    <title>Deteksi Mandiri COVID-19</title>
+    <style type="text/css">
+		</style>
   </head>
+
   </body>
     <h1>Pemerintah Provinsi Jawa Tengah
        <br>
@@ -74,7 +77,7 @@
                                 <br>
                                 UMUM : 085294051915
                             </p>
-                            <footer class="blockquote-footer">Tim Kewaspadaan COVID-19 Universitas Andalas</footer>
+                            <footer class="blockquote-footer">Tim Kewaspadaan COVID-19 Provinsi Jawa Tengah</footer>
                         </blockquote>
                     </div>
                 </div>
