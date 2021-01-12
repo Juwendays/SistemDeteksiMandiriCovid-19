@@ -95,7 +95,10 @@ class BiodataController extends Controller
         Session::put('foto',$data->foto);
         Session::put('fotoktp',$data->fotoktp);
 
-	// alihkan halaman ke halaman TEST FUNGSI SAMA DENGAN HEADER
-	return redirect('/indikator/covid19/'.$data->no_test);
+    // alihkan halaman ke halaman TEST FUNGSI SAMA DENGAN HEADER
+    // return Redirect::route('indikator, $data->no_test')->with( ['data' => $data] );
+    // return redirect('/indikator/covid19/'.$data->no_test);
+    
+    return redirect('/indikator');
     }
 }

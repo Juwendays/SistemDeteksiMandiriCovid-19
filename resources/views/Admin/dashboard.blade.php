@@ -73,9 +73,9 @@
                                 <div class="card-body-icon">
                                     <i class="fas fa-fw fa-life-ring"></i>
                                 </div>
-                                <div class="mr-5">13 New Tickets!</div>
+                                <div class="mr-5">Tambah Indikator</div>
                             </div>
-                            <a class="card-footer text-white clearfix small z-1" href="#">
+                            <a class="card-footer text-white clearfix small z-1" href="{{ route('tambahsoal')}}">
                                 <span class="float-left">View Details</span>
                                 <span class="float-right">
                                     <i class="fas fa-angle-right"></i>

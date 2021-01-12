@@ -53,10 +53,14 @@ Route::group(['middleware' => 'CekLoginMiddleware'], function(){
     Route::get('/unduh','UnduhController@unduh')->name('unduh');
 
     //Halaman Indikator
-    Route::get('/indikator/covid19/{data}','IndikatorController@index')->name('indikator');
+    Route::get('/indikator','IndikatorController@index')->name('indikator');
     Route::get('/indikator2','IndikatorController@indikator2')->name('indikator2');
     Route::post('/test','TestController@store')->name('test');
     Route::get('/selesai','IndikatorController@selesai')->name('selesai');
 // });
+
+Route::get('/cobaunduh','UnduhController@cobaunduh')->name('cobaunduh');
+
+
 
 

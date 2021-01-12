@@ -83,7 +83,7 @@ class TestController extends Controller
             
             // $namaku = "Alvin Septo Juwenda";
             if($hasil>=0 && $hasil<=5){
-                $keterangan = "Resiko Rendah";
+                $keterangan = "Resiko Tidak Ada";
                 $rawat= "Tetap jaga kesehatan anda";
                 $result = "1";
             }    
@@ -106,14 +106,17 @@ class TestController extends Controller
             // $data = new Hasil();
             // $data->persentase = $hasil;
             // $data->keterangan = $keterangan;
+            $id_test=Session::get('no_test');
         
             Hasil::insert([
-                    'test_id'=> uniqid(),
+                    'test_id'=> $id_test,
                      'persentase'=> $hasil,
                      'keterangan'=> $keterangan,
                      'hasil'    => $rawat,
                      'result_id' => $result
                      ]);
+
+
 
 
             // Untuk Pengiriman Session
@@ -125,7 +128,7 @@ class TestController extends Controller
         
             // return view('hasil');
             return view('Indikator.indikator2',['tests' => $tests,'hasil' => $hasil ,'pilihan' => $pilihan,'keterangan'=> $keterangan])->with('status', 'Jawaban Anda berhasil tersimpan');
-        
+            // return redirect()->route( 'indikator2' )->with(  ['tests' => $tests,'hasil' => $hasil ,'pilihan' => $pilihan,'keterangan'=> $keterangan] );
             
     //  return redirect('/indikator2');
     // return redirect()->route('/indikator', ['pilihan' => $pilihan]);

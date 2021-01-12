@@ -61,10 +61,10 @@
                                 <i class="fas fa-pen"></i>
                             </a>
 
-                            <form action="/test/{{ $test->id }}" method="POST" class="d-inline" onclick="return confirm('Anda Yakin menghapus indikator ?')">
+                            <form action="/test/{{ $test->id }}" method="POST" class="d-inline">
                             @method('delete')
                             @csrf
-                            <button type="submit" class="btn btn-danger btn-sm">
+                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin untuk menghapus indikator?')">
                             <i class="fas fa-trash"></i></button>
                             </form>
                         </td>

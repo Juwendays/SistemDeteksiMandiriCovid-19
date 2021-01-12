@@ -53,6 +53,10 @@
         </div>
           @endif 
 			            <section>
+                        '<div class="alert alert-success alert-dismissible">
+                <h4><i class="icon fa fa-info"></i> Berhasil!</h4>
+                Berhasil Menyimpan Jawaban,Silahkan Lanjut ke Step berikutnya
+                </div>'
 			                <div class="inner">
 			                	<h3>Konfirmasi Data Diri</h3>
 			                	<div class="form-row table-responsive">
@@ -156,7 +160,7 @@
 						<!-- SECTION 2 -->
 			            <h2>
 			            	<span class="step-icon"><i class="zmdi zmdi-lock"></i></span>
-			            	<span class="step-text">Personal</span>
+			            	<span class="step-text">Rekap</span>
 			            </h2>
 			            <section>
 			                <div class="inner">

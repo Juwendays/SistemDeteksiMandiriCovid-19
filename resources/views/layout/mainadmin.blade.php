@@ -20,7 +20,7 @@
   <!-- Custom styles for this template -->
   <link href="{{ asset('assets/sbadmin/css/sb-admin-2.min.css') }}" rel="stylesheet">
 
-  <!-- <link href="{{ asset('assets/starter/images/jateng1.png')}}" style="width:50px;height:50px" rel="shortcut icon"> -->
+  <link href="{{ asset('assets/starter/images/jateng1.png')}}" style="width:50px;height:50px" rel="shortcut icon">
 
   <!-- Custom styles for this page -->
   <link href="{{ asset('assets/sbadmin/vendor/datatables/dataTables.bootstrap4.min.css') }}" rel="stylesheet">
@@ -48,7 +48,7 @@
       <hr class="sidebar-divider my-0">
 
       <!-- Nav Item - Dashboard -->
-      <li class="nav-item {{ request()->is('dashboard')? 'active' : ''}}"">
+      <li class="nav-item {{ request()->is('dashboard')? 'active' : ''}}">
         <a class="nav-link" href="{{ route('dashboard') }}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
@@ -63,19 +63,19 @@
       </div>
     
     <!-- Nav Item - Tables -->
-    <li class="nav-item {{ request()->is('rekapbiodata')? 'active' : ''}}"">
+    <li class="nav-item {{ request()->is('rekapbiodata')? 'active' : ''}}">
         <a class="nav-link" href="{{ route('rekapbiodata')}}">
           <i class="fas fa-fw fa-table"></i>
           <span>Table Rekap Data Diri</span></a>
       </li>
 
-      <li class="nav-item {{ request()->is('rekaphasiltest')? 'active' : ''}}"">
+      <li class="nav-item {{ request()->is('rekaphasiltest')? 'active' : ''}}">
         <a class="nav-link" href="{{ route('rekaphasil')}}">
           <i class="fas fa-fw fa-table"></i>
           <span>Table Rekap Hasil Test</span></a>
       </li>
 
-      <li class="nav-item {{ request()->is('rekapsoaltest')? 'active' : ''}}"">
+      <li class="nav-item {{ request()->is('rekapsoaltest')? 'active' : ''}}">
         <a class="nav-link" href="{{ route('rekapsoal')}}">
           <i class="fas fa-fw fa-table"></i>
           <span>Table Rekap Indikator</span></a>
@@ -90,7 +90,7 @@
       </div>
 
       <!-- Nav Item - Pages Collapse Menu -->
-      <li class="nav-item {{ request()->is('tambahsoal')? 'active' : ''}}"">
+      <li class="nav-item {{ request()->is('tambahsoal')? 'active' : ''}}">
         <a class="nav-link" href="{{ route('tambahsoal')}}">
           <i class="fas fa-fw fa-plus"></i>
           <span>Tambah Indikator Soal</span></a>
@@ -98,7 +98,7 @@
 
 
       <!-- Nav Item - Charts -->
-      <li class="nav-item {{ request()->is('register')? 'active' : ''}}"">
+      <li class="nav-item {{ request()->is('register')? 'active' : ''}}">
         <a class="nav-link" href="{{ url('register')}}">
           <i class="fas fa-fw fa-user-plus"></i>
           <span>Register</span></a>
@@ -181,7 +181,7 @@
                   Profile
                 </a> -->
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="{{ route('logout') }}">
+                <a class="dropdown-item" href="{{ route('logout') }}" data-toggle="modal" data-target="#logoutModal">
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Logout
                 </a>
@@ -228,7 +228,7 @@
         <div class="modal-body">Apakah anda ingin melakukan Logout akun?</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="{{ route('login') }}">Logout</a>
+          <a class="btn btn-primary" href="{{ route('logout') }}">Logout</a>
         </div>
       </div>
     </div>

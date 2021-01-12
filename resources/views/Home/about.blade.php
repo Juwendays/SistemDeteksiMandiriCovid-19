@@ -61,14 +61,14 @@
             <div class="row main-cont-wthree-2">
                 <div class="col-lg-6 feature-grid-left">
                     <h4 class="section-title-left">Benefit Kegunaan Aplikasi</h4>
-                    <p class="text-para">Curabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est.
+                    <!-- <p class="text-para">Curabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est.
                         Quisque ut lectus consequat, venenatis eros et, commodo risus. Nullam sit amet laoreet elit.
-                        Suspendisse non magna a velit imperdiet efficitur. </p>
-                    <ul class="list mt-4">
+                        Suspendisse non magna a velit imperdiet efficitur. </p> -->
+                    <!-- <ul class="list mt-4">
                         <li><span class="fa fa-check"></span> Fusce eget ex fermentum, ultricies nisi ac sed</li>
                         <li><span class="fa fa-check"></span> Quisque ut lectus consequat, venenatis eros et amet</li>
                         <li><span class="fa fa-check"></span> Fusce eget ex fermentum, ultricies nisi ac sed</li>
-                    </ul>
+                    </ul> -->
                     <a href="{{ url('/') }}" class="btn btn-primary btn-style mt-4">Kembali</a>
                 </div>
                 <div class="col-lg-6 feature-grid-right mt-lg-0 mt-5">
@@ -91,7 +91,7 @@
                         <div class="grids-1 box-wrap">
                             <a href="#more" class="icon"><span class="fa fa-refresh"></span></a>
                             <h4><a href="#feature" class="title-head">Fleksible</a></h4>
-                            <p>Vivamus a ligula quam. Ut blandit eu leo non. Duis sed dolor.</p>
+                            <p>Tes hanya memerlukan user melakukan pengisian indikator tidak harus melewati test medis</p>
                         </div>
                     </div>
                 </div>

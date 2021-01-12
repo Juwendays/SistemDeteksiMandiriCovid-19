@@ -23,9 +23,10 @@
           <tr>
           <th>#</th>
             <th>No Test</th>
-            <th>Nik</th>
             <th>Persentase</th>
-            <th>Keterangan</th>
+            <th>Kategori</th>
+            <th>Golongan</th>
+            <th>Saran</th>
             <th>Perlu Pemeriksaan Lanjutan</th>
           </tr>
         </thead>
@@ -33,10 +34,11 @@
         @foreach ($hasils as $hasil)
             <tr>
                 <td>{{ $loop->iteration }}</td>
-                <td>{{ $loop->iteration }}</td>
-                <td>{{ $hasil->nik }}</td>
+                <td>{{ $hasil->test_id }}</td>
                 <td>{{ $hasil->persentase }}</td>
                 <td>{{ $hasil->keterangan }}</td>
+                <td>{{ $hasil->result->desc_result }}</td>
+                <td>{{ $hasil->result->saran }}</td>
                 <td>{{ $hasil->hasil }}</td>
             </tr>
         @endforeach
