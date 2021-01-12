@@ -29,7 +29,7 @@
     @csrf
       <div class="form-group">
       <label for="indikator">Masukan Indikator</label>
-      <input type="text" class="form-control" id="indikator" placeholder="Masukan indikator" name="indikator" value="{{ $test->indikator }}">
+      <input type="text" class="form-control" id="indikator" placeholder="Masukan indikator" name="indikator" value="{{ $test->indikator }}" autocomplete="off">
 
       @error('indikator')
       <div class="invalid-feedback">Nama Mohon Untuk Di Isi</div>
@@ -39,7 +39,7 @@
 
 <div class="form-group">
       <label for="opsia">Opsi A</label>
-      <input type="text" class="form-control" id="opsia" placeholder="Masukan Opsi A" name="opsia" value="{{ $test->ya }}" >
+      <input type="text" class="form-control" id="opsia" placeholder="Masukan Opsi A" name="opsia" value="{{ $test->ya }}" autocomplete="off">
 
       @error('opsia')
       <div class="invalid-feedback">{{ $message}} </div>
@@ -49,7 +49,7 @@
 
 <div class="form-group">
       <label for="opsib">Opsi B</label>
-      <input type="text" class="form-control" id="opsib" placeholder="Masukan Opsi B" name="opsib" value="{{ $test->tidak }}">
+      <input type="text" class="form-control" id="opsib" placeholder="Masukan Opsi B" name="opsib" value="{{ $test->tidak }}" autocomplete="off">
 
       @error('opsib')
       <div class="invalid-feedback">{{ $message}} </div>
@@ -58,7 +58,7 @@
 
 <div class="form-group">
       <label for="jawaban">Kunci Jawaban (Isikan <b>ya</b> untuk opsi a atau isikan <b>tidak</b> untuk opsi b)</label>
-      <input type="text" class=" form-control @error('jawaban') is-invalid @enderror" id="jawaban" placeholder="Pilih Jawaban Benar" name="jawaban" value="{{ $test->knc_jawaban }}">
+      <input type="text" class=" form-control @error('jawaban') is-invalid @enderror" id="jawaban" placeholder="Pilih Jawaban Benar" name="jawaban" value="{{ $test->knc_jawaban }}" autocomplete="off">
 
       @error('jawaban')
       <div class="invalid-feedback">{{ $message}} </div>
@@ -78,13 +78,9 @@
 </div>
 
     </div>
-  </div>
-</div>
-
-</div>
 <!-- /.container-fluid -->
 
-</div>
+
 <!-- End of Main Content -->
 
 
