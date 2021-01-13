@@ -20,9 +20,20 @@ class IndikatorController extends Controller
 
     public function indikator2()
     {
+        // Mengambil id hasil dengan session
+        $id_test=Session::get('no_test');
+        
+        // Mengambil Database Tests
         $tests= Test::all();
 
-        return view('Indikator.indikator2'.$hasil->id,['tests' => $tests],compact('hasil'));
+        // Mencocokan no_test hasil
+        $hasil=Hasil::where('test_id',$id_test)->first();
+
+        // $hasil = Session::get('no_test');
+        $pilihan = Session::get('pilihan');
+
+
+        return view('Indikator.indikator2',['tests' => $tests,'hasil' => $hasil,'pilihan' => $pilihan]);
     }
 
     public function selesai(Request $request){

@@ -6,16 +6,18 @@ use Illuminate\Http\Request;
 use App\Models\Hasil;
 use App\Models\Result;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
+use Session;
 use PDF;
 
 class UnduhController extends Controller
 {
     public function unduh()
     {
+        $id_test=Session::get('no_test');
         // $hasil = Hasil::find($id);
-
+        $hasil=Hasil::where('test_id',$id_test)->first();
         // Menampilkan unduh pdf
-        $pdf = PDF::loadview('unduh')->setPaper('A4','potrait');
+        $pdf = PDF::loadview('unduh',['hasil'=>$hasil])->setPaper('A4','potrait');
         return $pdf->download('hasiltestcovid.pdf');
         return $pdf->stream();
 

@@ -261,10 +261,13 @@
                                     <!-- <br> -->
                                     <!-- <br>  -->
                                         <table>
-										@foreach ($pilihan as $pilih)   
-                                            <td>{{  $pilih  }}</td>
+										  <tr> 
+                                            <td>{{Session::get('kota')}}</td>
+                                            <td>{{Session::get('nama')}}</td>
+                                            {{ $hasil->keterangan }}
+                                            {{ $hasil->persentase}}
                                         </tr>
-                                        @endforeach
+                                        
                                         </table>
                                     </div>
                                 </div>
@@ -356,10 +359,7 @@
                                     <!-- <br> -->
                                     <!-- <br>  -->
                                         <table>
-										@foreach ($pilihan as $pilih)   
-                                            <td>{{  $pilih  }}</td>
-                                        </tr>
-                                        @endforeach
+										
                                         </table>
                                     </div>
                                 </div>
@@ -370,7 +370,7 @@
 							<p>
                                  Hasil test menunjukkan bahwa anda:
                                 <ul>
-                                    <li>  <b><u>{{Session::get('hasil')}}%</u></b>
+                                    <li> {{ $hasil->result->desc_result}} <b><u>{{Session::get('hasil')}}%</u></b>
                                     Anda beresiko terkena covid-19 dan dalam kategori <b><u>{{Session::get('keterangan')}}</u></b> terjangakit maupun menularkan ke orang lain sebagai bahan runjukan Selanjutnya
                                     kami sarankan anda bersedia untuk melakukan swab test di tempat yang sudah kami rujukan</p></li>
                                 </ul>

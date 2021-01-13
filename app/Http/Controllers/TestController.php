@@ -107,6 +107,7 @@ class TestController extends Controller
             // $data->persentase = $hasil;
             // $data->keterangan = $keterangan;
             $id_test=Session::get('no_test');
+            $pilihan1=Session::get('$pilihan');
         
             Hasil::insert([
                     'test_id'=> $id_test,
@@ -116,19 +117,16 @@ class TestController extends Controller
                      'result_id' => $result
                      ]);
 
-
-
-
             // Untuk Pengiriman Session
             Session::put('hasil',$hasil);
             Session::put('keterangan',$keterangan);
-            Session::put('pilihan',$request->pilihan);
+            Session::put('pilihan',$pilihan);
 
             $tests= Test::all();
         
             // return view('hasil');
-            return view('Indikator.indikator2',['tests' => $tests,'hasil' => $hasil ,'pilihan' => $pilihan,'keterangan'=> $keterangan])->with('status', 'Jawaban Anda berhasil tersimpan');
-            // return redirect()->route( 'indikator2' )->with(  ['tests' => $tests,'hasil' => $hasil ,'pilihan' => $pilihan,'keterangan'=> $keterangan] );
+            // return view('Indikator.indikator2',['tests' => $tests,'hasil' => $hasil ,'pilihan' => $pilihan,'keterangan'=> $keterangan])->with('status', 'Jawaban Anda berhasil tersimpan');
+            return redirect()->route( 'indikator2' )->with(  ['tests' => $tests,'hasil' => $hasil ,'pilihan' => $pilihan,'keterangan'=> $keterangan] );
             
     //  return redirect('/indikator2');
     // return redirect()->route('/indikator', ['pilihan' => $pilihan]);
