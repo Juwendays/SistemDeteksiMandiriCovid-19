@@ -13,7 +13,10 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-xl-3 col-sm-6 mb-3">
-                            
+
+                           <div class="card-footer text-white clearfix small z-1">
+                                        <span class="float-left">
+                                            <blockquote class="blockquote"> 
     <h1>Pemerintah Provinsi Jawa Tengah
        <br>
      Surat Pernyataan Hasil Test Mandiri Covid-19</h1>
@@ -35,6 +38,12 @@
      Kota           : {{Session::get('kota')}}
      <br>
 
+     </blockquote>
+                                        </span>
+                                        <span class="float-right">
+                                            <i class="fas fa-angle-right"></i>
+                                        </span>
+                                    </div>
      
                             
                             </div>
