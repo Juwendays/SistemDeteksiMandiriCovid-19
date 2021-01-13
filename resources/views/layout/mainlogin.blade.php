@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset('assets/fonts/font-awesome.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/login/css/style1.css') }}">
 
+    <link href="{{ asset('assets/starter/images/jateng1.png') }}" rel="icon" type="image/png">
     <!-- <link href="{{ asset('assets/starter/images/jateng1.png')}}" style="width:50px;height:50px" rel="shortcut icon"> -->
 
     <!-- Meta tags -->

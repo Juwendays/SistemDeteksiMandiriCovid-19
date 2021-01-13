@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Hasil;
 use App\Models\Result;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 use PDF;
 
 class UnduhController extends Controller
@@ -24,6 +25,18 @@ class UnduhController extends Controller
     public function cobaunduh(){
         $result=Result::all();
 
-        return view('cobaunduh',compact('result'));
+        QrCode::size(500)
+
+        ->format('png')
+
+        ->generate('HDTuto.com', public_path('images/qrcode.png'));
+
+        return view('cobaunduh');
+    }
+
+    public function welcome(){
+        
+        QrCode::generate('Make me into a QrCode!');
+        return view('welcome');
     }
 }

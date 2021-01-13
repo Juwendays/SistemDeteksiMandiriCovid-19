@@ -60,6 +60,7 @@ Route::group(['middleware' => 'CekLoginMiddleware'], function(){
 // });
 
 Route::get('/cobaunduh','UnduhController@cobaunduh')->name('cobaunduh');
+Route::get('/qr','UnduhController@welcome');
 
 
 

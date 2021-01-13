@@ -18,7 +18,7 @@ class IndikatorController extends Controller
         return view('Indikator.indikator',['tests' => $tests]);
     }
 
-    public function indikator2(Hasil $hasil)
+    public function indikator2()
     {
         $tests= Test::all();
 

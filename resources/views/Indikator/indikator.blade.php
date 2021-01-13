@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="{{ asset('assets/multiple/css/style.css') }}"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
-    <link href="{{ asset('assets/img/jateng1.png')}}" style="width:50px;height:50px" rel="shortcut icon">
+    <!-- <link href="{{ asset('assets/img/jateng1.png')}}" style="width:50px;height:50px" rel="shortcut icon"> -->
+    <link href="{{ asset('assets/starter/images/jateng1.png') }}" rel="icon" type="image/png">
 
 </head>
 
