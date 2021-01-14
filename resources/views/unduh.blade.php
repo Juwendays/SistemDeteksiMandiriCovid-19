@@ -12,7 +12,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-xl-3 col-sm-6 mb-3">
-                            <img src="{{ asset('assets/image/{{ $hasil->result->img') }}" class="rounded mx-auto d-block w-75" alt="Result">
+                           
                            <div class="card-footer text-white clearfix small z-1 {{ $hasil->result->bg }}">
                                         <span class="float-left">
                                             <blockquote class="blockquote"> 

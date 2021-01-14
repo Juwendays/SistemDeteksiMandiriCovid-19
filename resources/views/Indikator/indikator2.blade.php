@@ -372,7 +372,7 @@
                                     <li><b><u>{{ $hasil->result->desc_result }}</u></b>
                                     dengan<b><u> {{ $hasil->persentase }}% </u></b>
                                     Anda beresiko terkena covid-19 dan dalam kategori 
-                                    <b><u>{{ $hasil->keterangan }}</u></b> terjangakit maupun menularkan ke orang lain. Dari hasil test anda disarankan untuk: <b><u>{{$hasil->result->saran}}</u></b>
+                                    <b><u>{{ $hasil->keterangan }}</u></b> terjangakit maupun menularkan ke orang lain. Dari hasil test anda disarankan untuk: <b>{{$hasil->result->saran}}</b>
                                         </p>
                                     </li>
                                 </ul>

@@ -32,7 +32,7 @@ class UnduhController extends Controller
         // $hasil = Hasil::find($id);
         $hasil=Hasil::where('test_id',$id_test)->first();
 
-        return view('cobaunduh',['hasil' => $hasil],['biodatas'=>$biodatas]);
+        return view('cobaunduh',['hasil' => $hasil]);
     }
 
     public function welcome(){
