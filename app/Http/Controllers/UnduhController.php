@@ -7,6 +7,7 @@ use App\Models\Hasil;
 use App\Models\Result;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 use Session;
+use App\Http\Controllers\Dompdf;
 use PDF;
 
 class UnduhController extends Controller
@@ -17,6 +18,8 @@ class UnduhController extends Controller
         // $hasil = Hasil::find($id);
         $hasil=Hasil::where('test_id',$id_test)->first();
         // Menampilkan unduh pdf
+
+
         $pdf = PDF::loadview('unduh',['hasil'=>$hasil])->setPaper('A4','potrait');
         return $pdf->download('hasiltestcovid.pdf');
         return $pdf->stream();
@@ -29,7 +32,7 @@ class UnduhController extends Controller
         // $hasil = Hasil::find($id);
         $hasil=Hasil::where('test_id',$id_test)->first();
 
-        return view('cobaunduh',['hasil'=>$hasil]);
+        return view('cobaunduh',['hasil' => $hasil],['biodatas'=>$biodatas]);
     }
 
     public function welcome(){
