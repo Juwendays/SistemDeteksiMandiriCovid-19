@@ -126,7 +126,7 @@ class TestController extends Controller
         
             // return view('hasil');
             // return view('Indikator.indikator2',['tests' => $tests,'hasil' => $hasil ,'pilihan' => $pilihan,'keterangan'=> $keterangan])->with('status', 'Jawaban Anda berhasil tersimpan');
-            return redirect()->route( 'indikator2' )->with(  ['tests' => $tests,'hasil' => $hasil ,'pilihan' => $pilihan,'keterangan'=> $keterangan] );
+            return redirect()->route( 'indikator2'.$id_test )->with(  ['tests' => $tests,'hasil' => $hasil ,'pilihan' => $pilihan,'keterangan'=> $keterangan] );
             
     //  return redirect('/indikator2');
     // return redirect()->route('/indikator', ['pilihan' => $pilihan]);

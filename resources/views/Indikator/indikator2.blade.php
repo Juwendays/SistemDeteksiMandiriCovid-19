@@ -262,8 +262,7 @@
                                     <!-- <br>  -->
                                         <table>
 										  <tr> 
-                                            <td>{{Session::get('kota')}}</td>
-                                            <td>{{Session::get('nama')}}</td>
+                                            
                                             {{ $hasil->keterangan }}
                                             {{ $hasil->persentase}}
                                         </tr>
@@ -370,11 +369,23 @@
 							<p>
                                  Hasil test menunjukkan bahwa anda:
                                 <ul>
-                                    <li> {{ $hasil->result->desc_result}} <b><u>{{Session::get('hasil')}}%</u></b>
-                                    Anda beresiko terkena covid-19 dan dalam kategori <b><u>{{Session::get('keterangan')}}</u></b> terjangakit maupun menularkan ke orang lain sebagai bahan runjukan Selanjutnya
-                                    kami sarankan anda bersedia untuk melakukan swab test di tempat yang sudah kami rujukan</p></li>
+                                    <li><b><u>{{ $hasil->result->desc_result }}</u></b>
+                                    dengan<b><u> {{ $hasil->persentase }}% </u></b>
+                                    Anda beresiko terkena covid-19 dan dalam kategori 
+                                    <b><u>{{ $hasil->keterangan }}</u></b> terjangakit maupun menularkan ke orang lain. Dari hasil test anda disarankan untuk: <b><u>{{$hasil->result->saran}}</u></b>
+                                        </p>
+                                    </li>
                                 </ul>
                             </p>
+
+                            <div class="wizard-headerlink" class="d-inline">
+                                <div class="visible-print text-center">
+                                    {!! QrCode::size(100)->generate(Request::url()); !!}
+                                    <p>Scan untuk melihat hasil data</p>    
+                                </div>
+                            </div>
+
+                            
 
                             <!-- <div class="col-md-6 text-center"> -->
                             <div class="wizard-headerlink" class="d-inline">
@@ -387,12 +398,15 @@
                             Akhiri Test</a>
                             </div>
 
-                            <div class="wizard-headerlink" class="d-inline">
-                            <div class="visible-print text-center">
-    {!! QrCode::size(100)->generate(Request::url()); !!}
-    <p>Scan untuk melihat hasil data</p>
-</div>
-</div>
+                            <ul>
+                                <li>
+                                    <footer class="blockquote-footer"><b>Call Center Tim Kewaspadaan COVID-19 Dinas Komunikasi dan Informatika Provinsi Jawa Tengah :</b>
+                                <br>
+                                    MEDIS : 082313600560</blockquote></footer>
+                                </li>
+                            </ul>
+
+                            
                             
 			           
 		        	</div>

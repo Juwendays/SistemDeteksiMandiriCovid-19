@@ -20,6 +20,7 @@
   <!-- Custom styles for this template -->
   <link href="{{ asset('assets/sbadmin/css/sb-admin-2.min.css') }}" rel="stylesheet">
 
+
   <link href="{{ asset('assets/starter/images/jateng1.png')}}" style="width:50px;height:50px" rel="shortcut icon">
 
   <!-- Custom styles for this page -->

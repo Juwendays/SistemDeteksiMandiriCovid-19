@@ -25,15 +25,11 @@ class UnduhController extends Controller
     }
 
     public function cobaunduh(){
-        $result=Result::all();
+        $id_test=Session::get('no_test');
+        // $hasil = Hasil::find($id);
+        $hasil=Hasil::where('test_id',$id_test)->first();
 
-        QrCode::size(500)
-
-        ->format('png')
-
-        ->generate('HDTuto.com', public_path('images/qrcode.png'));
-
-        return view('cobaunduh');
+        return view('cobaunduh',['hasil'=>$hasil]);
     }
 
     public function welcome(){

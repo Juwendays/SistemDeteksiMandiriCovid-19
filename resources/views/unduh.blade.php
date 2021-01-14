@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Deteksi Mandiri COVID-19</title>
-    <style type="text/css">
-		</style>
+    
   </head>
 
   </body>
@@ -14,7 +13,7 @@
                         <div class="row">
                             <div class="col-xl-3 col-sm-6 mb-3">
 
-                           <div class="card-footer text-white clearfix small z-1">
+                           <div class="card-footer text-white clearfix small z-1 {{ $hasil->result->bg }}">
                                         <span class="float-left">
                                             <blockquote class="blockquote"> 
     <h1>Pemerintah Provinsi Jawa Tengah
@@ -39,14 +38,7 @@
      <br>
 
      </blockquote>
-                                        </span>
-                                        <span class="float-right">
-                                            <i class="fas fa-angle-right"></i>
-                                        </span>
-                                    </div>
-     
-                            
-                            </div>
+                                        
                             <div class="col-xl-9 col-sm-6 mb-9">
                                 <div class="card text-white o-hidden h-100 ">
                                     <div class="card-body">
@@ -58,6 +50,15 @@
                                         {{ $hasil->result->bg }}
                                         </div>
                                     </div>
+                                    </span>
+                                        <span class="float-right">
+                                            <i class="fas fa-angle-right"></i>
+                                        </span>
+                                    </div>
+     
+                            
+                            </div>
+
                                     <div class="card-footer text-white clearfix small z-1">
                                         <span class="float-left">
                                             <blockquote class="blockquote">
@@ -97,7 +98,9 @@
                                 <br>
                                 UMUM : 085294051915
                             </p>
-                            <footer class="blockquote-footer">Tim Kewaspadaan COVID-19 Provinsi Jawa Tengah</footer>
+                            <footer class="blockquote-footer"><b>Call Center Tim Kewaspadaan COVID-19 Dinas Komunikasi dan Informatika Provinsi Jawa Tengah :</b>
+                                <br>
+                                MEDIS : 082313600560</footer>
                         </blockquote>
                     </div>
                 </div>
