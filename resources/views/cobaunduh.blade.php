@@ -11265,17 +11265,17 @@ body.sidebar-toggled footer.sticky-footer {
                 <div class="card mb-3">
                     <div class="card-body">
                         <div class="row">
-                            <div class="col-xl-3 col-sm-6 mb-3">
+                            <!-- <div class="col-xl-3 col-sm-6 mb-3">
                                 <img src="{{ asset('assets/image/{{ $hasil->result->img') }}" class="rounded mx-auto d-block w-75" alt="Result">
-                            </div>
-                            <div class="col-xl-9 col-sm-6 mb-9">
+                            </div> -->
+                            <!-- <div class="col-xl-9 col-sm-6 mb-9"> -->
                                 <div class="card text-white o-hidden h-100 {{ $hasil->result->bg }}">
                                     <div class="card-body">
                                         <div class="card-body-icon">
                                             <i class="fas fa-fw fa-comments"></i>
                                         </div>
                                         <div class="mr-5">
-                                        {{ $hasil->result->bg }}
+                                        Hasil Test
                                         </div>
                                     </div>
                                     <div class="card-footer text-white clearfix small z-1 {{ $hasil->result->bg }}">
