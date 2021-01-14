@@ -11232,6 +11232,11 @@ body.sidebar-toggled footer.sticky-footer {
 </head>
 
             <div class="container-fluid">
+            <h1>Pemerintah Provinsi Jawa Tengah
+       <br>
+     Surat Pernyataan Hasil Test Mandiri Covid-19</h1>
+
+     <hr>
             <div class="card mb-3">
                     <div class="card-body">
             
@@ -11271,7 +11276,7 @@ body.sidebar-toggled footer.sticky-footer {
                                     <div class="card-footer text-white clearfix small z-1 {{ $hasil->result->bg }}">
                                         <span class="float-left">
                                             <blockquote class="blockquote">
-                                                <b>{{ $hasil->result->nama }}</b> 
+                                                <b>{{Session::get('nama')}}</b> 
                                                 Anda termasuk dalam pasien <b>{{ $hasil->result->desc_result }}</b><br><br>
                                                 <b>Saran:</b><br>
                                                 {{ $hasil->result->saran }}<br><br>
@@ -11293,19 +11298,17 @@ body.sidebar-toggled footer.sticky-footer {
                     <div class="card-body">
                         <blockquote class="blockquote">
                             <p>
-                                Menghadapi wabah Covid-19 yang semakin hari semakin membuat takut dan menimbulkan rasa tidak aman bagi masyarakat dunia, Universitas Andalas Padang turut berpartisipasi dalam menyediakan sistem deteksi dini terhadap serangan Covid-19.
+                                Menghadapi wabah Covid-19 yang semakin hari semakin membuat takut dan menimbulkan rasa tidak aman bagi masyarakat dunia, Provinsi Jawa Tengah Padang turut berpartisipasi dalam menyediakan sistem deteksi dini terhadap serangan Covid-19.
                                 <br>
                                 <br>
                                 Deteksi dini ini dibuat online yang dapat dimanfaatkan oleh masyarakat umum. Saudara tinggal menjawab beberapa pertanyaan dan hasil jawaban akan dianalisis secara online untuk menduga status saudara termasuk dalam kategori: sehat/bebas Covid-19, ODP (Orang Dalam Pemantauan) atau PDP (Pasien Dalam Pengawasan).
                                 <br>
                                 <br>
-                                <b>Call Center Tim Kewaspadaan COVID-19 Universitas Andalas :</b>
+                                <b>Call Center Tim Kewaspadaan COVID-19 Provinsi Jawa Tengah :</b>
                                 <br>
-                                MEDIS : 082386615683
-                                <br>
-                                UMUM : 085294051915
+                                MEDIS : 082313600560
                             </p>
-                            <footer class="blockquote-footer">Tim Kewaspadaan COVID-19 Universitas Andalas</footer>
+                            <footer class="blockquote-footer">Tim Kewaspadaan COVID-19 Provinsi Jawa Tengah</footer>
                         </blockquote>
                     </div>
                 </div>
