@@ -260,13 +260,12 @@
                                     <hr>
                                     <!-- <br> -->
                                     <!-- <br>  -->
-                                        <table>
-										  <tr> 
-                                            
-                                            {{ $hasil->keterangan }}
-                                            {{ $hasil->persentase}}
-                                        </tr>
-                                        
+                                        <table>    
+                                        @foreach ($pilihan as $pilih)
+                                            <tr>
+                                                <td>{{ $pilih }}</td>
+                                            </tr>
+                                        @endforeach  
                                         </table>
                                     </div>
                                 </div>
@@ -358,7 +357,13 @@
                                     <!-- <br> -->
                                     <!-- <br>  -->
                                         <table>
-										
+										@foreach ($pilihan as $pilih)
+                                        <tr>
+                                            <td>{{ $pilih }}</td>
+                                    
+                                            @endforeach
+                                            
+                                         </tr>
                                         </table>
                                     </div>
                                 </div>

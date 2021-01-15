@@ -60,6 +60,10 @@
 												<th>Nama Pengguna :</th>
 												<td>{{Session::get('nama')}}</td>
 											</tr>
+                                            <tr class="space-row">
+												<th>Tanggal Lahir :</th>
+												<td>{{Session::get('lahir')}}</td>
+											</tr>
 											<tr class="space-row">
 												<th>Alamat Pengguna :</th>
 												<td>{{Session::get('alamat')}}</td>

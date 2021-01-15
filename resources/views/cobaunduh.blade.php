@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+<title>Deteksi Mandiri COVID-19</title>
+<link href="{{ asset('assets/starter/images/jateng1.png') }}" rel="icon" type="image/png">
     <style>
         /*!
  * Start Bootstrap - SB Admin 2 v4.1.1 (https://startbootstrap.com/themes/sb-admin-2)

@@ -11239,21 +11239,33 @@ body.sidebar-toggled footer.sticky-footer {
      <hr>
             <div class="card mb-3">
                     <div class="card-body">
+
+                    <div class="card-footer text-white clearfix small z-1 {{ $hasil->result->bg }}">
+                                        <span class="float-left">
+                                            <!-- <blockquote class="blockquote"> -->
             
                     <h4>Data Anda : </h4>
 
-                    Nama           : {{Session::get('nama')}}
-                    <br>
-                    Nik            : {{Session::get('nik')}}
-                    <br>
-                    Alamat         : {{Session::get('alamat')}}
-                    <br>
-                    Email          : {{Session::get('email')}}
-                    <br>
-                    No Hp/Wa       : {{Session::get('no')}}
-                    <br>
-                    Kota           : {{Session::get('kota')}}
-                    <br>
+                                    No Test    :   {{Session::get('no_test')}}
+                                    Nama    :   {{Session::get('nama')}}
+
+                                    Nik     :   {{Session::get('nik')}}
+
+                                    Tanggal Lahir   :   {{Session::get('lahir')}}
+
+                                    Email   :   {{Session::get('email')}}
+ 
+                                    Alamat  :   {{Session::get('alamat')}}
+                             
+                        
+                                    No Hp   :   {{Session::get('no')}}
+                                
+                                    Kota    :   {{Session::get('kota')}}
+                                    
+
+                    <!-- </blockquote> -->
+                                        </span>
+                                </div>
 
 </div>
 </div>
