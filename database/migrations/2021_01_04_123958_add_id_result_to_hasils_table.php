@@ -14,7 +14,7 @@ class AddIdResultToHasilsTable extends Migration
     public function up()
     {
         Schema::table('hasils', function (Blueprint $table) {
-            $table->foreignId('result_id')->nullable()->after('hasil');
+            $table->foreignId('result_id')->nullable();
         });
     }
 

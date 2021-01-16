@@ -22,6 +22,7 @@ class IndikatorController extends Controller
     {
         // Mengambil id hasil dengan session
         $id_test=Session::get('no_test');
+        $pilihan=Session::get('pilihan');
         
         // Mengambil Database Tests
         $tests= Test::all();

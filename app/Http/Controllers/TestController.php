@@ -83,23 +83,15 @@ class TestController extends Controller
             
             // $namaku = "Alvin Septo Juwenda";
             if($hasil>=0 && $hasil<=5){
-                $keterangan = "Resiko Tidak Ada";
-                $rawat= "Tetap jaga kesehatan anda";
                 $result = "1";
             }    
             else if($hasil>=10 && $hasil<=35){
-              $keterangan = "Resiko Rendah";
-              $rawat= "Jaga Kondisi dan Ikuti Protokol Kesehatan";
               $result = "2";
             }
             else if($hasil>36 && $hasil<=66){
-              $keterangan = "Resiko Rentan";
-              $rawat= "direkomendasikan";
               $result = "3";
             }
             else{
-              $keterangan = "Resiko Tinggi";
-              $rawat= "Harus rawat";
                 $result = "4";
             }
         
@@ -112,21 +104,19 @@ class TestController extends Controller
             Hasil::insert([
                     'test_id'=> $id_test,
                      'persentase'=> $hasil,
-                     'keterangan'=> $keterangan,
-                     'hasil'    => $rawat,
                      'result_id' => $result
                      ]);
 
             // Untuk Pengiriman Session
-            Session::put('hasil',$hasil);
-            Session::put('keterangan',$keterangan);
+            // Session::put('hasil',$hasil);
+            // Session::put('keterangan',$keterangan);
             Session::put('pilihan',$pilihan);
 
             $tests= Test::all();
         
             // return view('hasil');
             // return view('Indikator.indikator2',['tests' => $tests,'hasil' => $hasil ,'pilihan' => $pilihan,'keterangan'=> $keterangan])->with('status', 'Jawaban Anda berhasil tersimpan');
-            return redirect()->route( 'indikator2' )->with(  ['tests' => $tests,'hasil' => $hasil ,'pilihan' => $pilihan,'keterangan'=> $keterangan] )->with('pilihan',$pilihan);
+            return redirect()->route( 'indikator2' )->with(  ['tests' => $tests] );
             
     //  return redirect('/indikator2');
     // return redirect()->route('/indikator', ['pilihan' => $pilihan]);

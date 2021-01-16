@@ -19,6 +19,7 @@ class CreateResultTable extends Migration
             // $table->bigInteger('id_result')->primary();
             $table->string('desc_result');
             $table->string('img');
+            $table->string('keterangan');
             $table->string('saran');
             $table->string('edukasi');
             $table->string('bg');
