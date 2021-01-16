@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AlterTableBiodatas extends Migration
+class CreateKotaTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class AlterTableBiodatas extends Migration
      */
     public function up()
     {
-        Schema::table('biodatas', function (Blueprint $table) {
-            
-        $table->dropUnique('biodatas_nik_unique');
-        $table->dropUnique('biodatas_email_unique');
-
+        Schema::create('kota', function (Blueprint $table) {
+            $table->id();
+            $table->string('kota');
+            $table->timestamps();
         });
     }
 
@@ -28,7 +27,6 @@ class AlterTableBiodatas extends Migration
      */
     public function down()
     {
-        Schema::table('biodatas', function (Blueprint $table) {
-        });
+        Schema::dropIfExists('kota');
     }
 }

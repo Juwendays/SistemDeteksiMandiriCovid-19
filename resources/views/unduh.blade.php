@@ -11247,19 +11247,19 @@ body.sidebar-toggled footer.sticky-footer {
                     <h4>Data Anda : </h4>
 
                                     No Test    :   {{Session::get('no_test')}}
+                                    <br>
                                     Nama    :   {{Session::get('nama')}}
-
+                                    <br>
                                     Nik     :   {{Session::get('nik')}}
-
+                                    <br>
                                     Tanggal Lahir   :   {{Session::get('lahir')}}
-
+                                    <br>
                                     Email   :   {{Session::get('email')}}
- 
+                                    <br>
                                     Alamat  :   {{Session::get('alamat')}}
-                             
-                        
+                                    <br>
                                     No Hp   :   {{Session::get('no')}}
-                                
+                                    <br>
                                     Kota    :   {{Session::get('kota')}}
                                     
 
