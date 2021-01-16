@@ -19,9 +19,9 @@ class BiodataController extends Controller
     {
         $rules = [
             'nama' => 'required',
-            'nik'  => 'required|min:16|max:16|unique:biodatas',
+            'nik'  => 'required|min:16|max:16',
             'lahir' => 'required',
-            'email' => 'required|email|unique:biodatas',
+            'email' => 'required|email',
             'alamat' => 'required',
             'no' => 'required|min:10|max:12',
             'kota' => 'required',
@@ -32,13 +32,13 @@ class BiodataController extends Controller
       $messages = [
           'nama.required'          => 'Nama wajib diisi.',
           'nik.required'           => 'Nomor Induk Kependudukan wajib diisi.',
-          'nik.unique'             => 'Nomor Induk Kependudukan sudah terdaftar.',
+        //   'nik.unique'             => 'Nomor Induk Kependudukan sudah terdaftar.',
           'nik.min'                => 'Nomor Induk Kependudukan minimal diisi dengan 16 karakter.',
           'nik.max'                => 'Nomor Induk Kependudukan maksimal diisi dengan 16 karakter.',
           'lahir.required'         => 'Tanggal Lahir wajib diisi.',
           'email.required'         => 'Email wajib diisi.',
           'email.email'            => 'Email tidak valid.',
-          'email.unique'           => 'Email sudah pernah terdaftar.',
+        //   'email.unique'           => 'Email sudah pernah terdaftar.',
           'alamat.required'        => 'Alamat wajib diisi',
           'no.required'            => 'Nomor HP wajib diisi.',
           'no.min'                 => 'Nomor HP minimal 10 angka',
