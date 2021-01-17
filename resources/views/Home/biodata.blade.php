@@ -35,7 +35,10 @@
       <form class="" action="{{ route('storebiodata')}}" method="POST" enctype="multipart/form-data">
         @csrf
 
-        <input type="hidden" name="id" value="{{ $biodata->id }}">
+       
+        <input type="hidden" name="id" value="">
+       
+        
         <table border="0" cellpadding="5">
         
           <div class="form-group row">
