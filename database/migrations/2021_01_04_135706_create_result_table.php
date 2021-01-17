@@ -20,8 +20,8 @@ class CreateResultTable extends Migration
             $table->string('desc_result');
             $table->string('img');
             $table->string('keterangan');
-            $table->string('saran');
-            $table->string('edukasi');
+            $table->string('saran',500);
+            $table->string('edukasi',500);
             $table->string('bg');
 
         });

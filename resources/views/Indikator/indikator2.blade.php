@@ -38,7 +38,7 @@
 			<div class="wizard-form">
 				<div class="wizard-header">
 					<h3 class="heading">Deteksi Mandiri COVID-19</h3>
-					<p>Isilah Pertanyaan-Pertanyaan Berikut Sesuai Dengan Kondisi Anda</p>
+					<p>Berikut Hasil Test Sesuai Dengan Kondisi Anda</p>
 				</div>
                 <form class="form-register" action="#" method="post">
 		        	<div id="form-total">

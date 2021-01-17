@@ -36,10 +36,10 @@
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $hasil->test_id }}</td>
                 <td>{{ $hasil->persentase }}</td>
-                <td>{{ $hasil->keterangan }}</td>
+                <td>{{ $hasil->result->keterangan }}</td>
                 <td>{{ $hasil->result->desc_result }}</td>
                 <td>{{ $hasil->result->saran }}</td>
-                <td>{{ $hasil->hasil }}</td>
+                <td>{{ $hasil->result->edukasi }}</td>
             </tr>
         @endforeach
       </table>

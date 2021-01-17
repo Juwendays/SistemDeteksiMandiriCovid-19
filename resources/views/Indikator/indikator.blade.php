@@ -123,9 +123,33 @@
                         <!-- <a href="{{ url('/test/hasil') }}" class="btn btn-primary"> -->
                         <td colspan="3">
                         <div class="wizard-header">
-                        <input type="submit" class="btn btn-success" name="submit" value="Simpan Jawaban" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?')">
-                            <!-- <i class="fas fa-save"></i>-->
+                        <input type="submit" class="btn btn-success" name="submit" value="Simpan Jawaban" onclick="return confirm('Apakah Anda yakin dengan jawaban Anda?') " >
+                        <!-- <i class="fas fa-save"></i> -->
+                            
                         </div>
+                        <!-- Model confirmasi -->
+                            <!-- <div id="ConfirmModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog ">
+                                 <div class="modal-content">
+                                <div class="modal-header">
+                              <h4 class="modal-title text-center">Confirm Indikator</h4>
+                                  <button type="button" class="close" data-dismiss="modal">
+                                    </button>
+                                      </div>
+                                        <div class="modal-body">
+                                          <p class="text-center">Anda yakin akan menghapus indikator ini?</p>
+                                        </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-success" data-dismiss="modal">
+                                          Cancel</button>
+                                        
+                                        <button type="submit" class="btn btn-danger" data-toggle="modal" data-target="ConfirmModal">
+                                                  Ya, Simpan</button>  
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div> -->
+                                <!-- model Konfirmasi -->
                         </td>
                         </tr>
                     </table>

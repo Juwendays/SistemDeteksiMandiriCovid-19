@@ -51,21 +51,45 @@
                                 <i class="fas fa-pen"></i>
                             </a>
 
-                            <form action="/test/{{ $test->id }}" method="POST" class="d-inline">
-                            @method('delete')
-                            @csrf
-                            <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin untuk menghapus indikator?')">
+                            <button type="submit" class="btn btn-danger btn-sm" data-toggle="modal" data-target="#DeleteModal">
                             <i class="fas fa-trash"></i></button>
-                            </form>
+
+                            <!-- Model confirmasi -->
+                            <div id="DeleteModal" class="modal fade" role="dialog">
+                                <div class="modal-dialog ">
+                                
+                                 <div class="modal-content">
+                                <div class="modal-header">
+                              <h4 class="modal-title text-center">Hapus Indikator</h4>
+                                  <button type="button" class="close" data-dismiss="modal">
+                                    </button>
+                                      </div>
+                                        <div class="modal-body">
+                                          <p class="text-center">Anda yakin akan menghapus indikator ini?</p>
+                                        </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-success" data-dismiss="modal">
+                                          Batal</button>
+                                        
+                                        <form action="/test/{{ $test->id }}" method="POST" class="d-inline">
+                                          @method('delete')
+                                          @csrf
+                                              <button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#DeleteModal">
+                                                  Hapus</button>
+                                          </form>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <!-- model Konfirmasi -->
+                            </div>
                         </td>
                     </tr>
                 @endforeach
                 </table>
               </div>
             </div>
-          </div>
-
-        </div>
+          </div>     
         <!-- /.container-fluid -->
 
       </div>
