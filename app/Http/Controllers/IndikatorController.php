@@ -28,7 +28,7 @@ class IndikatorController extends Controller
         $tests= Test::all();
 
         // Mencocokan no_test hasil
-        $hasil=Hasil::where('test_id',$id_test)->first();
+        $hasil=Hasil::where('no_test',$id_test)->first();
 
         // $hasil = Session::get('no_test');
         $pilihan = Session::get('pilihan');

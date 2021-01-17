@@ -14,7 +14,7 @@ class AddBiodataIdToHasilsTable extends Migration
     public function up()
     {
         Schema::table('hasils', function (Blueprint $table) {
-            $table->string('test_id',64)->nullable()->after('id');
+            $table->string('no_test',64)->nullable()->after('id');
         });
     }
 

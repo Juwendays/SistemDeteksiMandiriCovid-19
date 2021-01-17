@@ -14,8 +14,9 @@ class BiodataController extends Controller
     public function index()
     {
       $kota = Kota::all();
+      $biodata = Biodata::all();
 
-        return view('home.biodata',compact('kota'));
+        return view('home.biodata',compact('kota','biodata'));
     }
 
     public function store(Request $request)
@@ -77,6 +78,7 @@ class BiodataController extends Controller
         $data->kota = $request->kota;
         $data->foto = $foto;
         $data->fotoktp = $fotoktp;
+        $data->hasil_id = 1;
         session(['no_test'=> true]);
         $data->save();
 

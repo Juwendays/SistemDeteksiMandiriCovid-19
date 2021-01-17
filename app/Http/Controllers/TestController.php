@@ -102,7 +102,7 @@ class TestController extends Controller
             $pilihan1=Session::get('$pilihan');
         
             Hasil::insert([
-                    'test_id'=> $id_test,
+                     'no_test'=> $id_test,
                      'persentase'=> $hasil,
                      'result_id' => $result
                      ]);

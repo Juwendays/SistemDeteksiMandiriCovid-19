@@ -14,4 +14,9 @@ class Hasil extends Model
     {
     	return $this->belongsTo(Result::class);
     }
+
+    public function biodata()
+    {
+        return $this->hasOne(Biodata::class);
+    }
 }

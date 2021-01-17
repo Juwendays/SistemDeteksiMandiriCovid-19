@@ -13,6 +13,7 @@ class Biodata extends Model
 
     public function hasil()
     {
-    	return $this->hasOne(Hasil::class);
+    	return $this->belongsTo(Hasil::class);
     }
+    
 }
