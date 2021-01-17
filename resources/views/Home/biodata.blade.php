@@ -123,9 +123,11 @@
 
               <div class="col-sm-7 ">
             <select class="custom-select-sm @error('kota') is-invalid @enderror" name="kota" id="kota" value="{{ old('kota') }}">
-                <option selected>Pilih Kota/Kabupaten</option>
-                <option value="banjarnegara">BANJARNEGARA</option>
-                <option>BANYUMAS</option>
+                <option value="">Pilih Kota/Kabupaten</option>
+                @foreach($kota as $k)
+                <option value="{{ $k->kota }}">{{ $k->kota }}</option>
+                @endforeach
+                <!-- <option>BANYUMAS</option>
                 <option>BATANG</option>
                 <option>BLORA</option>
                 <option>BOYOLALI</option>
@@ -158,7 +160,7 @@
                 <option>KOTA SALATIGA</option>
                 <option>KOTA SEMARANG</option>
                 <option>KOTA PEKALONGAN</option>
-                <option>KOTA TEGAL</option>
+                <option>KOTA TEGAL</option> -->
             </select>
             
             @error('kota')

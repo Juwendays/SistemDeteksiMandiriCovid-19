@@ -1,3 +1,4 @@
+
 @extends('layout/mainadmin')
 
 @section('title', ' Deteksi Mandiri COVID-19')
@@ -24,6 +25,7 @@
           <th>#</th>
             <th>Foto</th>
             <th>Foto KTP</th>
+            <th>No Test</th>
             <th>NIK</th>
             <th>Nama</th>
             <th>Tanggal Lahir</th>
@@ -31,6 +33,7 @@
             <th>Email</th>
             <th>No</th>
             <th>Kota</th>
+            <th>Detail</th>
           </tr>
         </thead>
         <!-- <tfoot>
@@ -46,18 +49,22 @@
         </tfoot> -->
         <tbody>
         @foreach ($biodatas as $bio)
-    <tr>
-    <td>{{ $loop->iteration }}</td> 
-    <td><img src="{{ asset('storage/'.$bio['foto']) }}" width="100" height="100"></td>
-    <td><img src="{{ asset('storage/'.$bio['fotoktp']) }}" width="100" height="100"></td>
-    <td>{{ $bio->nik }}</td>
-    <td>{{ $bio->nama }}</td>
-    <td>{{ $bio->lahir }}</td>
-    <td>{{ $bio->alamat }}</td>
-    <td>{{ $bio->email }}</td>
-    <td>{{ $bio->no }}</td>
-    <td>{{ $bio->kota }}</td>
-    </tr>
+          <tr>
+              <td>{{ $loop->iteration }}</td> 
+              <td><img src="{{ asset('storage/'.$bio['foto']) }}" width="100" height="100"></td>
+              <td><img src="{{ asset('storage/'.$bio['fotoktp']) }}" width="100" height="100"></td>
+              <td>{{ $bio->no_test }}</td>
+              <td>{{ $bio->nik }}</td>
+              <td>{{ $bio->nama }}</td>
+              <td>{{ $bio->lahir }}</td>
+              <td>{{ $bio->alamat }}</td>
+              <td>{{ $bio->email }}</td>
+              <td>{{ $bio->no }}</td>
+              <td>{{ $bio->kota }}</td>
+              <td>
+                
+              </td>
+          </tr>
         @endforeach
       </table>
     </div>

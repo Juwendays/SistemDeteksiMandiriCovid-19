@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Biodata;
 use App\Models\Hasil;
+use App\Models\Kota;
 use Session;
 use Validator;
 
@@ -12,7 +13,9 @@ class BiodataController extends Controller
 {
     public function index()
     {
-        return view('home.biodata');
+      $kota = Kota::all();
+
+        return view('home.biodata',compact('kota'));
     }
 
     public function store(Request $request)

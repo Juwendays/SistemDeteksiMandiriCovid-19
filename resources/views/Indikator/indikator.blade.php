@@ -110,6 +110,10 @@
                                                 <input name="pilihan[{{ $t->id}}]" type="radio" value="Ya"> {{ $t->ya }}</font></td>
                                                 <td><input name="pilihan[{{ $t->id}}]" type="radio" value="Tidak">{{ $t->tidak }}</font></td>
                                                 </div>
+
+                                                @error('pilihan[]')
+                                                <div class="text-danger">{{ $message }}</div>
+                                                @enderror
                                             </td>
                                         </tr>
                                                 <label>
