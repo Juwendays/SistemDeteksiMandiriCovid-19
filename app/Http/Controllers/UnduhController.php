@@ -16,7 +16,7 @@ class UnduhController extends Controller
     {
         $id_test=Session::get('no_test');
         // $hasil = Hasil::find($id);
-        $hasil=Hasil::where('test_id',$id_test)->first();
+        $hasil=Hasil::where('no_test',$id_test)->first();
         // Menampilkan unduh pdf
 
 
@@ -27,12 +27,13 @@ class UnduhController extends Controller
         $request->session()->flush();
     }
 
-    public function cobaunduh(){
+    public function cobaunduh(Hasil $hasil)
+    {
         $id_test=Session::get('no_test');
         // $hasil = Hasil::find($id);
-        $hasil=Hasil::where('test_id',$id_test)->first();
+        $hasil=Hasil::where('no_test',$id_test)->first();
 
-        return view('cobaunduh',['hasil' => $hasil]);
+        return view('cobaunduh',compact('hasil'));
     }
 
     public function welcome(){

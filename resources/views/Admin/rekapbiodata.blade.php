@@ -16,7 +16,9 @@
 <div class="card shadow mb-4">
   <div class="card-header py-3">
     <h6 class="m-0 font-weight-bold text-primary">Table Rekap Biodata User</h6>
-    <button type=submit>Unduh</button>
+    <div class="float-right">
+    <a href="{{ route('unduhrekapbiodata') }}" class="btn btn-success">Unduh <i class="fas fa-download"></i></a>
+    </div>
   </div>
   <div class="card-body">
     <div class="table-responsive">
@@ -63,7 +65,7 @@
               <td>{{ $bio->no }}</td>
               <td>{{ $bio->kota }}</td>
               <td>
-                
+              <a href="/rekapbiodata/{{ $bio -> id }}" class="badge badge-primary">Detail</a>
               </td>
           </tr>
         @endforeach

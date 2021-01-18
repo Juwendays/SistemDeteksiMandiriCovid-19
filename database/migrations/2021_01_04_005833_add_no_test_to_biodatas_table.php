@@ -15,7 +15,7 @@ class AddNoTestToBiodatasTable extends Migration
     {
         Schema::table('biodatas', function (Blueprint $table) {
             $table->string('no_test',64)->nullable()->after('id');
-            $table->string('hasil_id',64)->nullable();
+            $table->bigInteger('hasil_id');
         });
     }
 

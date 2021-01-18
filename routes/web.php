@@ -48,7 +48,7 @@ Route::group(['middleware' => 'CekLoginMiddleware'], function(){
     Route::post('/test/create', 'AdminController@create')->name('buatsoal');
 });
 
-// Route::group(['middleware' => 'CekNoTest'], function(){
+Route::group(['middleware' => 'CekNoTest'], function(){
     //Halaman Unduh
     Route::get('/unduh','UnduhController@unduh')->name('unduh');
 
@@ -57,10 +57,17 @@ Route::group(['middleware' => 'CekLoginMiddleware'], function(){
     Route::get('/indikator2','IndikatorController@indikator2')->name('indikator2');
     Route::post('/test','TestController@store')->name('test');
     Route::get('/selesai','IndikatorController@selesai')->name('selesai');
-// });
+});
 
 Route::get('/cobaunduh','UnduhController@cobaunduh')->name('cobaunduh');
 Route::get('/qr','UnduhController@welcome');
+
+
+Route::get('/unduhrekapbiodata','AdminController@unduhrekapbiodata')->name('unduhrekapbiodata');
+Route::get('/unduhrekaphasil','AdminController@unduhrekaphasil')->name('unduhrekaphasil');
+Route::get('/detail','AdminController@detail')->name('detail');
+
+Route::get('/rekapbiodata/{biodata}' , 'AdminController@show');
 
 
 

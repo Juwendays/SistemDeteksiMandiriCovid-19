@@ -15,6 +15,9 @@
 <div class="card shadow mb-4">
   <div class="card-header py-3">
     <h6 class="m-0 font-weight-bold text-primary">Table Rekap Hasil Test</h6>
+    <div class="float-right">
+    <a href="{{ route('unduhrekaphasil') }}" class="btn btn-success">Unduh<i class="fas fa-download"></i></a>
+    </div>
   </div>
   <div class="card-body">
     <div class="table-responsive">
@@ -27,14 +30,14 @@
             <th>Kategori</th>
             <th>Golongan</th>
             <th>Saran</th>
-            <th>Perlu Pemeriksaan Lanjutan</th>
+            <th>Edukasi</th>
           </tr>
         </thead>
         <tbody>
         @foreach ($hasils as $hasil)
             <tr>
                 <td>{{ $loop->iteration }}</td>
-                <td>{{ $hasil->test_id }}</td>
+                <td>{{ $hasil->no_test }}</td>
                 <td>{{ $hasil->persentase }}</td>
                 <td>{{ $hasil->result->keterangan }}</td>
                 <td>{{ $hasil->result->desc_result }}</td>
