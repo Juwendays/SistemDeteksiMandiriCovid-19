@@ -78,7 +78,7 @@ class BiodataController extends Controller
         $data->kota = $request->kota;
         $data->foto = $foto;
         $data->fotoktp = $fotoktp;
-        $data->hasil_id = 1;
+        // $data->hasil_id = 1;
         session(['no_test'=> true]);
         $data->save();
 

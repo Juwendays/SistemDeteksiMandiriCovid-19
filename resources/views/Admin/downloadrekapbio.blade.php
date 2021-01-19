@@ -8,14 +8,44 @@
 	<style type="text/css">
 		table tr td,
 		table tr th{
-			font-size: 9pt;
-		}
+            font-size: 10px;
+        }
+        
+        table {
+        border-collapse: collapse;
+        }
+
+        
+.table-bordered {
+  border: 1px solid #e3e6f0;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #e3e6f0;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+.table-borderless th,
+.table-borderless td,
+.table-borderless thead th,
+.table-borderless tbody + tbody {
+  border: 0;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05);
+}
 	</style>
 	<center>
 		<h5>Laporan Rekap Data Diri User Test COVID-19</h4>
 	</center>
 
-	<table class='table table-bordered'>
+	<table class='table table-striped'>
 		<thead>
         <tr>
           <th>#</th>
@@ -28,7 +58,6 @@
             <th>Alamat</th>
             <th>Email</th>
             <th>No</th>
-            <th>Kota</th>
           </tr>
 		</thead>
 		<tbody>
@@ -43,8 +72,8 @@
               <td>{{ $bio->lahir }}</td>
               <td>{{ $bio->alamat }}</td>
               <td>{{ $bio->email }}</td>
-              <td>{{ $bio->no }}</td>
               <td>{{ $bio->kota }}</td>
+              
             </tr>
         @endforeach
 		</tbody>

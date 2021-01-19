@@ -11264,16 +11264,15 @@ body.sidebar-toggled footer.sticky-footer {
                                     
 
                     <!-- </blockquote> -->
-                                        </span>
+                                    </span>
                                 </div>
-
-</div>
-</div>
+                            </div>
+                        </div>
                 <div class="card mb-3">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-xl-3 col-sm-6 mb-3">
-                                <!-- <img src="{{ asset('assets/image/{{ $hasil->result->img') }}" class="rounded mx-auto d-block w-75" alt="Result"> -->
+                                <img src="{{ asset('assets/image/'.$hasil->result->img) }}" class="rounded mx-auto d-block w-75" alt="Result">
                             </div>
                             <!-- <div class="col-xl-9 col-sm-6 mb-9"> -->
                                 <div class="card text-white o-hidden h-100 {{ $hasil->result->bg }}">

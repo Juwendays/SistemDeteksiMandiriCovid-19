@@ -9,11 +9,11 @@ class Biodata extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['nik','nama','email','alamat','no','kota','foto','fotoktp'];
+    protected $fillable = ['nik','nama','email','no_test','alamat','no','kota','foto','fotoktp'];
 
     public function hasil()
     {
-    	return $this->belongsTo(Hasil::class);
+    	return $this->belongsTo(Hasil::class,'id');
     }
     
 }

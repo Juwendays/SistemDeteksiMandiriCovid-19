@@ -65,7 +65,7 @@
               <td>{{ $bio->no }}</td>
               <td>{{ $bio->kota }}</td>
               <td>
-              <a href="/rekapbiodata/{{ $bio -> id }}" class="badge badge-primary">Detail</a>
+                <a href="/rekapbiodata/{{ $bio -> id }}" class="badge badge-primary">Detail <i class="fas fa-arrow-circle-left"></i></a>
               </td>
           </tr>
         @endforeach

@@ -15,7 +15,7 @@
 		<h5>Laporan Rekap Hasil Test COVID-19</h4>
 	</center>
 
-	<table class='table table-bordered'>
+	<table class='table table-striped'>
 		<thead>
         <tr>
           <th>#</th>
@@ -31,8 +31,8 @@
 			@foreach ($hasils as $hasil)
             <tr>
                 <td>{{ $loop->iteration }}</td>
-                <td>{{ $hasil->test_id }}</td>
-                <td>{{ $hasil->persentase }}</td>
+                <td>{{ $hasil->no_test }}</td>
+                <td>{{ $hasil->persentase }}%</td>
                 <td>{{ $hasil->result->keterangan }}</td>
                 <td>{{ $hasil->result->desc_result }}</td>
                 <td>{{ $hasil->result->saran }}</td>

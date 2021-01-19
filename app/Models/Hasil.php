@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Hasil extends Model
 {
     use HasFactory;
-    protected $fillable =['id','test_id','persentase','keterangan','hasil','id_result'];
+    protected $fillable =['id','test_id','no_test,','persentase','keterangan','hasil','id_result'];
 
     public function result()
     {
@@ -17,6 +17,6 @@ class Hasil extends Model
 
     public function biodata()
     {
-        return $this->hasOne(Biodata::class);
+        return $this->hasOne(Biodata::class,'id');
     }
 }

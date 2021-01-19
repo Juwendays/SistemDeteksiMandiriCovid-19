@@ -16,7 +16,7 @@
   <div class="card-header py-3">
     <h6 class="m-0 font-weight-bold text-primary">Table Rekap Hasil Test</h6>
     <div class="float-right">
-    <a href="{{ route('unduhrekaphasil') }}" class="btn btn-success">Unduh<i class="fas fa-download"></i></a>
+    <a href="{{ route('unduhrekaphasil') }}" class="btn btn-success">Unduh <i class="fas fa-download"></i></a>
     </div>
   </div>
   <div class="card-body">
@@ -38,7 +38,7 @@
             <tr>
                 <td>{{ $loop->iteration }}</td>
                 <td>{{ $hasil->no_test }}</td>
-                <td>{{ $hasil->persentase }}</td>
+                <td>{{ $hasil->persentase }}%</td>
                 <td>{{ $hasil->result->keterangan }}</td>
                 <td>{{ $hasil->result->desc_result }}</td>
                 <td>{{ $hasil->result->saran }}</td>
