@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Dompdf;
 use App\Models\Biodata;
 use App\Models\Test;
 use App\Models\Hasil;
 use Validator;
+use App\Http\Controllers\Dompdf;
 use PDF;
 
 class AdminController extends Controller
@@ -141,7 +141,7 @@ class AdminController extends Controller
         $biodatas = Biodata::all();
 
         $pdf = PDF::loadview('Admin.downloadrekapbio',['biodatas'=>$biodatas])->setPaper('A4','potrait');
-        return $pdf->download('laporan-rekapbiodata-pdf');
+        return $pdf->download('laporan-rekapbiodata.pdf');
         return $pdf->stream();
     }
 
@@ -150,7 +150,7 @@ class AdminController extends Controller
         $hasils = Hasil::all();
 
         $pdf = PDF::loadview('Admin.downloadrekaphasil',['hasils'=>$hasils])->setPaper('A4','potrait');
-        return $pdf->download('laporan-rekaphasil-pdf');
+        return $pdf->download('laporan-rekaphasil.pdf');
         return $pdf->stream();
     }
 
