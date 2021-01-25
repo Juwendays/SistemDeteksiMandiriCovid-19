@@ -94,7 +94,7 @@
             <div class="invalid-feedback">{{ $message }}</div>
             @enderror
             </div>
-</div>
+            </div>
 
             <div class="form-group row">
             <label for="alamat" class="col-sm-5 col-form-label">Alamat</label>
@@ -107,7 +107,7 @@
             <div class="invalid-feedback">{{ $message }}</div>
             @enderror
             </div>
-</div>
+            </div>
 
             <div class="form-group row">
             <label for="no" class="col-sm-5 col-form-label">No HP/WA</label>
@@ -120,7 +120,7 @@
             <div class="invalid-feedback">{{ $message }}</div>
             @enderror
             </div>
-</div>
+            </div>
 
             <div class="form-group row">
 
@@ -132,40 +132,6 @@
                 @foreach($kota as $k)
                 <option value="{{ $k->kota }}">{{ $k->kota }}</option>
                 @endforeach
-                <!-- <option>BANYUMAS</option>
-                <option>BATANG</option>
-                <option>BLORA</option>
-                <option>BOYOLALI</option>
-                <option>BREBES</option>
-                <option>CILACAP</option>
-                <option>DEMAK</option>
-                <option>GROBOGAN</option>
-                <option>PURBALINGGA</option>
-                <option>KEBUMEN</option>
-                <option>PURWOREJO</option>
-                <option>WONOSOBO</option>
-                <option>MAGELANG</option>
-                <option>KLATEN</option>
-                <option>SUKOHARJO</option>
-                <option>WONOGIRI</option>
-                <option>KARANGANYAR</option>
-                <option>SRAGEN</option>
-                <option>REMBANG</option>
-                <option>PATI</option>
-                <option>KUDUS</option>
-                <option>JEPARA</option>
-                <option>SEMARANG</option>
-                <option>TEMANGGUNG</option>
-                <option>KENDAL</option>
-                <option>PEKALONGAN</option>
-                <option>PEMALANG</option>
-                <option>TEGAL</option>
-                <option>KOTA MAGELANG</option>
-                <option>KOTA SURAKARTA</option>
-                <option>KOTA SALATIGA</option>
-                <option>KOTA SEMARANG</option>
-                <option>KOTA PEKALONGAN</option>
-                <option>KOTA TEGAL</option> -->
             </select>
             
             @error('kota')
@@ -201,11 +167,11 @@
             </div>
 
 
-<div class="mt-4">
+          <div class="mt-4">
             <div class="d-flex justify-content-center">
             <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-                  </div>
-</div>
+            </div>
+          </div>
         
 
         </table>

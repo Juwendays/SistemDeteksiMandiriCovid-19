@@ -159,4 +159,15 @@ class AdminController extends Controller
 
         return view('Detail.detailrekapbiodata', compact('biodata'));
     }
+
+    public function chart()
+    {
+        $bukanodp = Hasil::where('result_id','=','1')->count();
+        $otg = Hasil::where('result_id','=','2')->count();
+        $odp = Hasil::where('result_id','=','3')->count();
+        $pdp = Hasil::where('result_id','=','4')->count();
+
+        
+        return view('grafik',compact('bukanodp','otg','odp','pdp'));
+    }
 }

@@ -16,6 +16,7 @@
   <div class="card-header py-3">
     <h6 class="m-0 font-weight-bold text-primary">Table Rekap Hasil Test</h6>
     <div class="float-right">
+    <a href="{{ route('diagramhasiltest') }}" class="btn btn-info">Diagram <i class="fas fa-chart-pie"></i></a>
     <a href="{{ route('unduhrekaphasil') }}" class="btn btn-success">Unduh <i class="fas fa-download"></i></a>
     </div>
   </div>

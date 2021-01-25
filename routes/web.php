@@ -36,6 +36,7 @@ Route::group(['middleware' => 'CekLoginMiddleware'], function(){
     // Halaman Admin
     Route::get('/dashboard','AdminController@dashboard')->name('dashboard');
     Route::get('/rekapbiodata','AdminController@rekapbiodata')->name('rekapbiodata');
+    Route::get('/detail','AdminController@detail')->name('detail');
     Route::get('/rekaphasiltest','AdminController@rekaphasil')->name('rekaphasil');
     Route::get('/rekapsoaltest','AdminController@rekapsoal')->name('rekapsoal');
     Route::get('/tambahsoal','AdminController@tambahsoal')->name('tambahsoal');
@@ -46,6 +47,7 @@ Route::group(['middleware' => 'CekLoginMiddleware'], function(){
     Route::get('/test/{test}/edit', 'AdminController@edit')->name('editsoal');
     Route::patch('/test/{test}', 'AdminController@update')->name('updatesoal');
     Route::post('/test/create', 'AdminController@create')->name('buatsoal');
+    
 });
 
 Route::group(['middleware' => 'CekNoTest'], function(){
@@ -65,9 +67,11 @@ Route::get('/qr','UnduhController@welcome');
 
 Route::get('/unduhrekapbiodata','AdminController@unduhrekapbiodata')->name('unduhrekapbiodata');
 Route::get('/unduhrekaphasil','AdminController@unduhrekaphasil')->name('unduhrekaphasil');
-Route::get('/detail','AdminController@detail')->name('detail');
+
 
 Route::get('/rekapbiodata/{biodata}' , 'AdminController@show');
+
+Route::get('/diagramhasiltest','AdminController@chart')->name('diagramhasiltest');
 
 
 
