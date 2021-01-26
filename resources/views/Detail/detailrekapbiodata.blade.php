@@ -1,6 +1,6 @@
 @extends('layout/maindetail')
 
-@section('title', 'Daftar Detail Student')
+@section('title', 'Deteksi Mandiri COVID-19')
 
 @section('container')
 
@@ -64,7 +64,7 @@
            
                             
 
-    <div class="card mb-3">
+                <div class="card mb-3">
                     <div class="card-body">
                         <div class="row">
                             <div class="col-xl-3 col-sm-6 mb-3">
