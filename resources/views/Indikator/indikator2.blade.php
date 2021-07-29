@@ -383,12 +383,12 @@
                                 </ul>
                             </p>
 
-                            <div class="wizard-headerlink" class="d-inline">
+                            <!-- <div class="wizard-headerlink" class="d-inline">
                                 <div class="visible-print text-center">
                                     {!! QrCode::size(100)->generate(Request::url()); !!}
                                     <p>Scan untuk melihat hasil data</p>    
                                 </div>
-                            </div>
+                            </div> -->
 
                             
 
